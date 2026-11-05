@@ -39,12 +39,12 @@ body{background:radial-gradient(circle at 20% 15%,#f3fbf8,#e3f3ec 60%,#dcefe7)}
   border:8px solid #f6df4b;overflow:hidden;display:flex;flex-direction:column;background:#eaf6f2;
   box-shadow:0 10px 30px rgba(10,30,60,.18)}
 /* en-tete */
-.head{position:relative;height:338px;flex:none;background:#0d1f44;overflow:hidden}
+.head{position:relative;height:%(hh)spx;flex:none;background:#0d1f44;overflow:hidden}
 .hbg{position:absolute;inset:0;width:100%%;height:100%%}
 .brush{position:absolute;left:170px;top:70px;width:590px;height:%(bh)spx;background:rgba(8,18,44,.9);z-index:2}
 .title{position:absolute;left:206px;top:92px;width:520px;font-weight:800;font-size:%(tsize)spx;line-height:1.2;letter-spacing:-.3px;z-index:3;text-shadow:0 2px 8px rgba(0,0,0,.35)}
 .title mark{background:%(y)s;color:#12244a;padding:0 14px;border-radius:7px;display:inline-block;transform:rotate(-2deg);text-shadow:none;margin:3px 0}
-.sub{position:absolute;left:206px;font-family:'Kalam',cursive;font-weight:700;font-size:25px;color:%(y)s;z-index:3;text-shadow:0 2px 6px rgba(0,0,0,.4)}
+.sub{width:470px;line-height:1.2;position:absolute;left:206px;font-family:'Kalam',cursive;font-weight:700;font-size:25px;color:%(y)s;z-index:3;text-shadow:0 2px 6px rgba(0,0,0,.4)}
 .mascot{position:absolute;right:118px;bottom:-4px;width:250px;height:275px;z-index:2}
 .bubble{position:absolute;right:62px;top:38px;width:250px;text-align:center;font-family:'Kalam',cursive;font-weight:700;font-size:21px;line-height:1.25;color:#fff;z-index:3;text-shadow:0 2px 6px rgba(0,0,0,.45)}
 .bubble:after{content:'';display:block;width:120px;height:5px;margin:6px auto 0;border-radius:4px;background:%(y)s;transform:rotate(-2deg)}
@@ -87,10 +87,22 @@ svg.scene{position:absolute;inset:0;width:100%%;height:100%%}
 .scene-p .hl{position:absolute;bottom:9px;left:9px;z-index:2;font-size:%(hlsize)spx;max-width:92%%}
 .q{position:relative;z-index:2;margin:10px 10px 0;align-self:flex-start;background:%(y)s;color:#12244a;font-family:'Kalam',cursive;font-weight:700;font-size:21px;line-height:1.2;padding:5px 12px;border-radius:9px;transform:rotate(-2deg);box-shadow:0 4px 10px rgba(0,0,0,.3)}
 .cm{position:absolute;bottom:10px;left:10px;z-index:2;background:rgba(9,18,42,.92);color:#fff;font-family:'Kalam',cursive;font-weight:700;font-size:18px;padding:5px 14px;border-radius:16px}
+/* colonnes */
+.colc{padding:56px 9px 10px;background:#f6fbfa;color:#12244a;align-items:center;justify-content:flex-start;gap:7px;border:2px solid var(--c);border-radius:16px;text-align:left}
+.cnum{position:absolute;top:-2px;left:50%%;transform:translateX(-50%%);width:50px;height:50px;border-radius:50%%;background:var(--c);color:#fff;font-weight:800;font-size:28px;display:flex;align-items:center;justify-content:center;border:3px solid #fff;box-shadow:0 4px 10px rgba(0,0,0,.3);z-index:3}
+.ctitle{background:var(--c);color:#fff;font-weight:700;font-size:%(ctsize)spx;line-height:1.15;text-align:center;padding:8px 8px;border-radius:7px;width:calc(100%% + 8px);margin:-30px -4px 0;padding-top:34px;transform:rotate(-1deg);box-shadow:0 3px 8px rgba(0,0,0,.2)}
+.cicons{display:flex;gap:6px;justify-content:center;align-items:center;margin:2px 0}
+.cicons img{width:%(cisize)spx;height:%(cisize)spx}
+.cex{font-weight:700;font-size:14px;align-self:flex-start}
+.cbul{list-style:none;display:flex;flex-direction:column;gap:6px;width:100%%}
+.cbul li{display:flex;gap:6px;font-weight:500;font-size:%(cbsize)spx;line-height:1.22}
+.cbul li:before{content:'';flex:none;width:6px;height:12px;margin:2px 5px 0 2px;border-right:3.5px solid var(--c);border-bottom:3.5px solid var(--c);transform:rotate(40deg)}
+.chl{margin-top:auto;background:var(--c);color:#fff;font-family:'Kalam',cursive;font-weight:700;font-size:17px;line-height:1.15;text-align:center;padding:7px 8px;border-radius:8px;transform:rotate(-1.5deg);width:100%%}
+.wk{position:absolute;right:70px;bottom:0;width:360px;height:171px;z-index:1}
 /* pied */
-.foot{position:relative;height:150px;flex:none;background:#0b3b6a;overflow:hidden}
+.foot{position:relative;height:%(fh)spx;flex:none;background:#0b3b6a;overflow:hidden}
 .fbg{position:absolute;inset:0;width:100%%;height:100%%}
-.foot .glow{position:absolute;left:50%%;top:50%%;width:560px;height:150px;transform:translate(-50%%,-50%%);background:radial-gradient(ellipse,rgba(6,16,40,.82),rgba(6,16,40,0) 70%%);z-index:1}
+.foot .glow{position:absolute;left:50%%;top:50%%;width:800px;height:176px;transform:translate(-50%%,-50%%);background:radial-gradient(ellipse,rgba(6,16,40,.82),rgba(6,16,40,0) 70%%);z-index:1}
 .foot .in{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:26px;padding:0 120px 30px;z-index:2}
 .logo{display:flex;align-items:center;gap:14px}
 .fhc{font-family:'Lora',serif;font-weight:700;font-size:62px;line-height:1;letter-spacing:-2px;color:#fff;position:relative}
@@ -212,7 +224,22 @@ def jagged(w=590, h=196, seed=3):
     return "polygon(" + ",".join(f"{a}% {b}%" for a, b in pts) + ")"
 
 
+COLS = {"gold": "#d99a1d", "green": "#1f8a64", "blue": "#2563c4", "purple": "#6a45c0", "teal": "#17877f"}
+
+
+def col_panel(p):
+    c = COLS[p.get("color", "blue")]
+    icons = "".join(f'<img src="{icon_uri(i)}">' for i in p.get("icons", []))
+    bul = "".join(f"<li><span>{b}</span></li>" for b in p.get("bullets", []))
+    ex = f'<div class="cex">{p["ex"]}</div>' if p.get("ex") else ""
+    mb = f'margin-bottom:{p["mb"]}px;' if p.get("mb") else ""
+    return (f'<div class="p colc" style="--c:{c};{mb}"><div class="cnum">{p["num"]}</div><div class="ctitle">{p["title"]}</div>'
+            f'<div class="cicons">{icons}</div>{ex}<ul class="cbul">{bul}</ul><div class="chl">{p["hl"]}</div></div>')
+
+
 def panel(p):
+    if p.get("col"):
+        return col_panel(p)
     if p.get("scene"):
         return scene_panel(p)
     cls = ["p", p.get("tone", "navy")]
@@ -265,14 +292,16 @@ def build_html(spec):
     css = CSS
     for k, v in dict(f=FONTS, y=YELLOW, g=GOLD, tsize=spec.get("tsize", 40), psize=spec.get("psize", 23),
                      xsize=spec.get("xsize", 19), isize=spec.get("isize", 64), capsize=spec.get("capsize", 17),
-                     hlsize=spec.get("hlsize", 19), bh=spec.get("brush_h", 196)).items():
+                     hlsize=spec.get("hlsize", 19), bh=spec.get("brush_h", 196), hh=spec.get("head_h", 338),
+                     fh=spec.get("foot_h", 150), ctsize=spec.get("ctsize", 19), cisize=spec.get("cisize", 76),
+                     cbsize=spec.get("cbsize", 15.5)).items():
         css = css.replace(f"%({k})s", str(v))
     css = css.replace("%%", "%")
     return f"""<!DOCTYPE html><html><head><meta charset="utf-8"><style>{css}</style></head><body>
 <div class="circle">
  <div class="head">{SC.header_bg()}
   <div class="brush" style="clip-path:{jagged()}"></div>
-  <div class="title">{title}</div>{sub_html}{bubble}<svg class="mascot" viewBox="0 0 300 330">{SC.man(spec.get("pose", "think"), "hm")}</svg></div>
+  <div class="title">{title}</div>{sub_html}{bubble}{SC.workspace() if spec.get("header") == "workspace" else '<svg class="mascot" viewBox="0 0 300 330">' + SC.man(spec.get("pose", "think"), "hm") + "</svg>"}</div>
  <div class="body">{"".join(rows)}</div>
  <div class="foot">{SC.footer_bg()}<div class="glow"></div>
   <div class="in"><div class="logo"><div class="fhc">FHC{LEAF}</div><div class="sep"></div>

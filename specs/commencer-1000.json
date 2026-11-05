@@ -1,0 +1,106 @@
+{
+  "slug": "commencer-1000",
+  "header": "workspace",
+  "head_h": 300,
+  "foot_h": 176,
+  "brush_h": 214,
+  "tsize": 48,
+  "sub_top": 218,
+  "title": "Comment je\n<mark>commence</mark>&nbsp;?",
+  "subtitle": "Voici ce que je ferais avec mon premier 1&nbsp;000&nbsp;$, si je recommençais aujourd'hui.",
+  "rows": [
+    {
+      "h": 1,
+      "panels": [
+        {
+          "col": true,
+          "num": 1,
+          "color": "gold",
+          "title": "Choisis ta plateforme",
+          "icons": [
+            "💻",
+            "📱"
+          ],
+          "mb": 18,
+          "bullets": [
+            "Courtier en ligne à faibles frais",
+            "Compare les frais et l'interface",
+            "Ouvre d'abord un CELI ou un REER"
+          ],
+          "hl": "Ton 1 000 $ dans un compte enregistré"
+        },
+        {
+          "col": true,
+          "num": 2,
+          "color": "green",
+          "title": "Connais ton risque",
+          "icons": [
+            "🌍"
+          ],
+          "mb": 6,
+          "bullets": [
+            "Diversifie avec des fonds, pas des titres isolés",
+            "Ex. : UMMA (actions mondiales conformes)",
+            "Un seul achat = diversification instantanée"
+          ],
+          "hl": "Moins de stress, plus de sérénité"
+        },
+        {
+          "col": true,
+          "num": 3,
+          "color": "blue",
+          "title": "Comprends ce que tu achètes",
+          "icons": [
+            "🔍",
+            "📄"
+          ],
+          "mb": 0,
+          "bullets": [
+            "Composition du fonds",
+            "Frais (RFG)",
+            "10 plus gros titres",
+            "Conformité halal"
+          ],
+          "hl": "5 min de lecture = moins de surprises"
+        },
+        {
+          "col": true,
+          "num": 4,
+          "color": "purple",
+          "title": "Étale tes achats",
+          "icons": [
+            "🗓️",
+            "💰"
+          ],
+          "mb": 6,
+          "ex": "Exemple :",
+          "bullets": [
+            "250 $ par semaine (4 semaines)",
+            "ou 125 $ par semaine (8 semaines)",
+            "Virement automatique à chaque paie"
+          ],
+          "hl": "Pas juste 1 000 $ : une habitude"
+        },
+        {
+          "col": true,
+          "num": 5,
+          "color": "teal",
+          "title": "Suis tes progrès",
+          "icons": [
+            "📈",
+            "🌱"
+          ],
+          "mb": 18,
+          "bullets": [
+            "Vérifie ta valeur nette chaque trimestre",
+            "Regarde la tendance sur des années, pas des semaines"
+          ],
+          "hl": "Ce qui se mesure s'améliore"
+        }
+      ]
+    }
+  ],
+  "cta": "Ton premier 1&nbsp;000&nbsp;$ : le début de quelque chose de grand.",
+  "cbsize": 15,
+  "cisize": 70
+}

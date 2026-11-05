@@ -298,9 +298,28 @@ def footer_bg(u="ft"):
     return (f'<svg class="fbg" viewBox="0 0 1024 176" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><defs>'
             f'{_lin(u+"sk", [(0, "#0a2552"), (.6, "#1a5a96"), (1, "#3f9bb0")])}{_lin(u+"l", [(0, "#1d6aa8"), (1, "#0a3a5e")])}</defs>'
             f'<rect width="1024" height="176" fill="url(#{u}sk)"/>'
-            '<path d="M0 120 L90 40 L170 110 L260 30 L360 120 Z" fill="#2c6aa5"/><path d="M700 120 L790 36 L880 110 L960 50 L1024 110 L1024 120 Z" fill="#2c6aa5"/>'
-            '<path d="M260 30 L284 62 L262 54 L244 64 Z M790 36 L812 66 L792 58 L774 68 Z" fill="#fff" opacity=".9"/>'
+            '<path d="M0 120 L60 70 L120 112 L170 120 Z" fill="#2c6aa5"/><path d="M700 120 L790 36 L880 110 L960 50 L1024 110 L1024 120 Z" fill="#2c6aa5"/>'
+            '<path d="M790 36 L812 66 L792 58 L774 68 Z" fill="#fff" opacity=".25"/>'
             + buildings(130, "#0f3a6a", 31, hmax=70, x0=300, x1=700, hmin=25) + cn_tower(140, 130, "#0b2f5c") + mosque(900, 130, "#0b2f5c", 60) +
             f'<rect y="126" width="1024" height="50" fill="url(#{u}l)"/>'
             + pines(136, [0, 30, 60, 90, 940, 970, 1000], "#0e4a36", 1.5) + pines(140, [200, 232, 780, 812], "#14603f", 1.1) +
             '<g stroke="#ffd98a" stroke-opacity=".35" stroke-width="2"><path d="M360 150 h120 M560 156 h100 M440 164 h160"/></g></svg>')
+
+
+def workspace(u="wk"):
+    """Bureau (sans personnage): portable avec graphique, tasse, pile de livres, plante. viewBox 420x200."""
+    books = ""
+    for i, (txt, col) in enumerate([("INVESTIR", "#1b3a78"), ("ÉPARGNER", "#16305f"), ("PLANIFIER", "#1b3a78"), ("RÉUSSIR", "#16305f")]):
+        y = 78 + i * 18
+        books += (f'<rect x="{292+(i%2)*6}" y="{y}" width="108" height="17" rx="3" fill="{col}" stroke="{OUT}" stroke-width="2.5"/>'
+                  f'<text x="{346+(i%2)*6}" y="{y+12.5}" font-family="Poppins" font-weight="700" font-size="10" fill="#f6df4b" text-anchor="middle">{txt}</text>')
+    return f"""<svg class="wk" viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg"><defs>{_lin(u+"d", [(0, "#9a6338"), (1, "#6b3f22")])}</defs>
+<rect x="0" y="150" width="420" height="50" fill="url(#{u}d)" stroke="{OUT}" stroke-width="3"/><rect x="0" y="150" width="420" height="5" fill="#c58a56"/>
+<path d="M24 150 C20 128 26 112 34 104 C40 116 44 130 40 150 Z M40 150 C44 124 56 110 66 106 C66 124 60 138 54 150 Z" fill="#35b26a" stroke="{OUT}" stroke-width="2.5"/>
+<rect x="22" y="144" width="40" height="8" rx="2" fill="#c9693c" stroke="{OUT}" stroke-width="2"/>
+<rect x="84" y="108" width="42" height="42" rx="6" fill="#fff" stroke="{OUT}" stroke-width="3"/><path d="M126 118 q16 0 16 14 q0 14 -16 14" stroke="{OUT}" stroke-width="3" fill="none"/>
+<text x="105" y="126" font-family="Poppins" font-weight="700" font-size="9" fill="#12244a" text-anchor="middle">Petit pas</text><text x="105" y="138" font-family="Poppins" font-weight="700" font-size="9" fill="#12244a" text-anchor="middle">Grands projets</text>
+<path d="M164 150 L274 150 L266 160 L172 160 Z" fill="#aab3c4" stroke="{OUT}" stroke-width="3"/>
+<rect x="170" y="52" width="98" height="98" rx="7" fill="#1d2a44" stroke="{OUT}" stroke-width="3.5"/><rect x="178" y="60" width="82" height="82" fill="#8ec5ff"/>
+<path d="M184 128 L204 108 L218 118 L252 76" stroke="#20c070" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M238 74 L254 74 L254 90" stroke="#20c070" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+{books}</svg>"""

@@ -36,3 +36,8 @@ Les scènes peintes très détaillées (personnages en situation, enfants, arèn
 - Panneau scène : `scene`, `cap`, `hl`, `q`, `cm`, `w` (poids de largeur).
 - Panneau info : `tone` (`navy`/`light`), `color` (`blue`/`green`/`orange`/`purple`/`red`), `num`, `icon` (emoji), `iconpos` (`left`), `title`, `text`, `stat`, `note`, `hl`, `warn`, `center`.
 - Exemples : `specs/*.json`. Commande : `python3 tools/make_post.py specs/<nom>.json`.
+
+## Variante « colonnes » (sans mascotte)
+- `header: "workspace"` remplace la mascotte par un bureau dessiné (portable, tasse, livres).
+- Panneau colonne : `col: true`, `num`, `color` (`gold`/`green`/`blue`/`purple`/`teal`), `title`, `icons` (emojis), `bullets`, `ex`, `hl`, `mb` (marge basse pour suivre la courbe du cercle). Réglages : `head_h`, `foot_h`, `cbsize`, `cisize`. Exemple : `specs/commencer-1000.json`.
+- Deux familles de visuels : (A) générés par ChatGPT (style peint, publiés tels quels après vérification du texte) ; (B) générés ici (vectoriel, automatisables).
