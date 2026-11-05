@@ -1,0 +1,63 @@
+{
+  "slug": "impot-strategie",
+  "kicker": "Tu paies trop d'impôt si…",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "La plus grosse erreur d'impôt des Québécois n'est pas ce qu'ils <mark>déduisent</mark>.",
+      "hook": "C'est ce qu'ils n'ont jamais planifié avant.",
+      "swipe": "Glisse : 8 signes que tu paies trop ➜"
+    },
+    {
+      "type": "cards",
+      "cards": [
+        {"num": 1, "color": "gold", "icon": "🧾", "text": "Tu produis tes déclarations (fédérale et Québec), mais tu n'as <b>aucune stratégie fiscale</b>."},
+        {"num": 2, "color": "blue", "icon": "📈", "text": "Tu ne connais pas ton <b>taux marginal d'imposition</b>."}
+      ]
+    },
+    {
+      "type": "chips",
+      "card": {"num": 3, "color": "green", "text": "Tu n'as cotisé ni au CELI, ni au REER, ni au CELIAPP, ni au REEE. Ces comptes peuvent <b>réduire ton impôt</b>, faire croître ton argent <b>à l'abri de l'impôt</b> ou te donner accès à des <b>subventions</b>."},
+      "chips": [
+        {"name": "CELI", "sub": "gains libres d'impôt", "color": "green", "icon": "🌱"},
+        {"name": "REER", "sub": "déduction d'impôt", "color": "blue", "icon": "🏦"},
+        {"name": "CELIAPP", "sub": "première propriété", "color": "purple", "icon": "🏠"},
+        {"name": "REEE", "sub": "subventions études", "color": "gold", "icon": "🎓"}
+      ]
+    },
+    {
+      "type": "cards",
+      "cards": [
+        {"num": 4, "color": "purple", "icon": "🧮", "text": "Ton comptable est bon pour <b>produire</b> ta déclaration. <b>Planifier</b>, c'est un autre travail."},
+        {"num": 5, "color": "teal", "icon": "📅", "text": "Tu penses à tes impôts <b>seulement au moment</b> de produire ta déclaration."}
+      ]
+    },
+    {
+      "type": "cards",
+      "cards": [
+        {"num": 6, "color": "gold", "icon": "💵", "text": "Ton revenu a augmenté cette année, mais ta <b>stratégie est restée la même</b>."},
+        {"num": 7, "color": "blue", "icon": "🏢", "text": "Tu as un revenu autonome, un immeuble locatif ou une entreprise, mais tu <b>ne suis pas tes dépenses</b> régulièrement."}
+      ]
+    },
+    {
+      "type": "flow",
+      "card": {"num": 8, "color": "green", "text": "Personne ne t'a jamais montré comment tout cela <b>fonctionne ensemble</b> :"},
+      "flow": [
+        {"icon": "🧾", "label": "Impôts"},
+        {"icon": "📈", "label": "Placements"},
+        {"icon": "🏛️", "label": "Prestations"},
+        {"icon": "🐷", "label": "Épargne"}
+      ],
+      "hl": "= un seul plan"
+    },
+    {
+      "type": "closing",
+      "kicker": "Le vrai problème",
+      "h": "Pour plusieurs, le problème n'est pas l'impôt.",
+      "hl": "C'est l'absence de stratégie.",
+      "text": "Les familles à l'aise ne misent pas seulement sur <b>gagner plus</b>. Elles planifient pour <b>garder plus</b> de ce qu'elles gagnent : planification fiscale réfléchie, placements efficaces et un rôle précis pour chaque dollar.",
+      "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+      "disc": "Information générale, pas un avis fiscal ou financier personnalisé."
+    }
+  ]
+}
