@@ -2,77 +2,68 @@
   "slug": "zakat-calcul",
   "title": "La zakat :\ncomment la <mark>calculer</mark>&nbsp;?",
   "subtitle": "Un pilier de l'islam, pas une option.",
-  "sub_top": 232,
+  "sub_top": 222,
   "pose": "think",
   "rows": [
     {
-      "h": 0.8,
+      "h": 1,
+      "panels": [
+        {
+          "scene": "money",
+          "cap": "1. Additionne ce que tu possèdes depuis 1&nbsp;an lunaire.",
+          "hl": "Épargne, or, placements"
+        },
+        {
+          "scene": "bills",
+          "cap": "2. Soustrais tes dettes à payer sans tarder.",
+          "hl": "= patrimoine net"
+        },
+        {
+          "tone": "navy",
+          "icon": "🧮",
+          "center": true,
+          "title": "3. Multiplie",
+          "stat": "× 2,5&nbsp;%",
+          "text": "Si net ≥ nisab.",
+          "hl": "= ta zakat due",
+          "isize": 40
+        },
+        {
+          "scene": "mosque",
+          "cap": "Pas un don libre : une obligation.",
+          "hl": "Un pilier de l'islam"
+        }
+      ]
+    },
+    {
+      "h": 1,
       "panels": [
         {
           "tone": "navy",
-          "icon": "🕌",
-          "iconpos": "left",
-          "title": "C'est une obligation, pas un don libre.",
-          "text": "<b>2,5 %</b> de ton patrimoine zakatable, chaque année lunaire, dès qu'il dépasse le <b>nisab</b>."
-        }
-      ]
-    },
-    {
-      "h": 2.0,
-      "panels": [
-        {
-          "num": 1,
-          "color": "blue",
-          "icon": "💰",
-          "title": "Additionne",
-          "text": "Liquidités, épargne, or, argent, placements, stock.",
-          "hl": "Détenu 1 an lunaire",
-          "isize": 54
-        },
-        {
-          "num": 2,
-          "color": "orange",
-          "icon": "🧾",
-          "title": "Soustrais",
-          "text": "Tes dettes à payer sans tarder.",
-          "hl": "Patrimoine net",
-          "isize": 54
-        },
-        {
-          "num": 3,
-          "color": "green",
-          "icon": "🧮",
-          "title": "Multiplie",
-          "text": "Si le net dépasse le nisab : ×&nbsp;2,5&nbsp;%.",
-          "hl": "= ta zakat due",
-          "isize": 54
-        }
-      ]
-    },
-    {
-      "h": 0.8,
-      "panels": [
-        {
-          "tone": "light",
           "icon": "🥇",
-          "iconpos": "left",
-          "isize": 52,
+          "isize": 44,
+          "center": true,
           "title": "Nisab or",
-          "stat": "≈ 85 g"
+          "stat": "≈ 85&nbsp;g",
+          "text": "Seuil à dépasser pour devoir la zakat."
         },
         {
-          "tone": "light",
+          "tone": "navy",
           "icon": "🥈",
-          "iconpos": "left",
-          "isize": 52,
+          "isize": 44,
+          "center": true,
           "title": "Nisab argent",
-          "stat": "≈ 595 g"
+          "stat": "≈ 595&nbsp;g",
+          "text": "Autre seuil de référence."
+        },
+        {
+          "scene": "thinker",
+          "w": 1.5,
+          "q": "Quand fais-tu tes comptes de zakat&nbsp;?",
+          "cm": "Dis-le en commentaire&nbsp;!"
         }
       ],
-      "inset": 26
+      "inset": 52
     }
-  ],
-  "cta": "Tu la calcules quand&nbsp;?",
-  "tsize": 40,
-  "xsize": 18
+  ]
 }

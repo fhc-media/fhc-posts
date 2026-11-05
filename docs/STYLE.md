@@ -23,12 +23,16 @@ Référence : les infographies « circulaires » illustrées de la marque (forma
 - Slogan du pied : « ÉPARGNER · INVESTIR · BÂTIR · UN AVENIR HALAL » (« UN » et non « UNE »).
 - Logo : « FHC » en serif blanc avec barre rouge et feuille d'érable or, puis FINANCE / HALAL (or) / CANADA.
 
+## Panneaux illustrés
+Chaque panneau peut être une **scène** vectorielle (`scene`) : `mosque`, `city`, `cabin`, `desk`, `thinker`, `money`, `bills`, `scale`, `shield`, `house`, `stocks`, `family` (tools/scenes.py). Habillage : légende sombre en haut (`cap`), pastille jaune en bas (`hl`), question jaune (`q`) et bulle « Dis-le en commentaire ! » (`cm`).
+
 ## Ce que le générateur ne fait pas
-Les scènes illustrées complexes (personnage en situation, décors détaillés) viennent d'un générateur d'images IA. Ici : mascotte vectorielle fixe, icônes Twemoji, skyline vectorielle.
+Les scènes peintes très détaillées (personnages en situation, enfants, arène de hockey) viennent d'un générateur d'images IA. Ici : scènes vectorielles et mascotte fixe.
 
 ## Format d'une spec (JSON)
 - `slug`, `title` (`<mark>` pour le surlignage, `\n` pour un retour à la ligne), `subtitle`, `pose` (`think`/`smile`), `cta`.
 - Réglages optionnels : `tsize` (taille du titre), `sub_top`, `psize`, `xsize`, `isize`.
-- `rows` : liste de lignes `{"h": poids, "inset": marge, "panels": [...]}`.
-- Panneau : `tone` (`navy`/`light`), `color` (`blue`/`green`/`orange`/`purple`/`red`), `num`, `icon` (emoji), `iconpos` (`left`), `title`, `text`, `stat`, `note`, `hl`, `warn`, `center`.
+- `rows` : liste de lignes `{"h": poids, "inset": marge, "panels": [...]}`. Convention : ligne 1 pleine largeur, lignes suivantes avec `inset` ≈ 52 (le cercle rogne les coins).
+- Panneau scène : `scene`, `cap`, `hl`, `q`, `cm`, `w` (poids de largeur).
+- Panneau info : `tone` (`navy`/`light`), `color` (`blue`/`green`/`orange`/`purple`/`red`), `num`, `icon` (emoji), `iconpos` (`left`), `title`, `text`, `stat`, `note`, `hl`, `warn`, `center`.
 - Exemples : `specs/*.json`. Commande : `python3 tools/make_post.py specs/<nom>.json`.

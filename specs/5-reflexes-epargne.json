@@ -1,64 +1,51 @@
 {
   "title": "5 réflexes d'épargne\nqui <mark>changent tout</mark>",
-  "tsize": 37,
-  "sub_top": 232,
+  "tsize": 36,
   "subtitle": "La constance bat le montant.",
   "pose": "smile",
   "rows": [
     {
-      "h": 1.6,
+      "h": 1,
       "panels": [
         {
-          "num": 1,
-          "color": "blue",
-          "icon": "💳",
-          "isize": 50,
-          "title": "Paie-toi d'abord",
-          "text": "Virement automatique le jour de paie."
+          "scene": "money",
+          "cap": "1. Paie-toi d'abord, le jour de paie.",
+          "hl": "Virement automatique"
         },
         {
-          "num": 2,
-          "color": "green",
-          "icon": "🛡️",
-          "isize": 50,
-          "title": "Fonds d'urgence",
-          "text": "3 à 6 mois de dépenses."
+          "scene": "shield",
+          "cap": "2. Bâtis ton fonds d'urgence.",
+          "hl": "3 à 6 mois"
         },
         {
-          "num": 3,
-          "color": "orange",
-          "icon": "📒",
-          "isize": 50,
-          "title": "Budget",
-          "text": "Sache où va chaque dollar."
+          "scene": "desk",
+          "cap": "3. Suis ton budget, dollar par dollar.",
+          "hl": "Sache où tu vas"
         }
       ]
     },
     {
-      "h": 1.7,
-      "inset": 18,
+      "h": 1,
+      "inset": 52,
       "panels": [
         {
-          "num": 4,
-          "color": "red",
-          "icon": "⚠️",
-          "isize": 50,
-          "title": "Dettes à intérêt",
-          "text": "Élimine-les en premier.",
+          "scene": "bills",
+          "cap": "4. Élimine d'abord les dettes à intérêt.",
           "hl": "Priorité"
         },
         {
-          "num": 5,
-          "color": "purple",
-          "icon": "🌱",
-          "isize": 50,
-          "title": "Investis halal",
-          "text": "Même 25 $ par paie, régulièrement.",
-          "hl": "Petit à petit"
+          "scene": "stocks",
+          "cap": "5. Investis halal, régulièrement.",
+          "hl": "Même 25 $ par paie"
+        },
+        {
+          "scene": "family",
+          "q": "Lequel te manque le plus&nbsp;?",
+          "cm": "Dis-le en commentaire&nbsp;!"
         }
       ]
     }
   ],
-  "cta": "Lequel te manque le plus&nbsp;?",
-  "slug": "5-reflexes-epargne"
+  "slug": "5-reflexes-epargne",
+  "sub_top": 222
 }

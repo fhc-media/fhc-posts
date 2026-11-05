@@ -1,70 +1,68 @@
 {
   "title": "Maison sans <mark>intérêt</mark> :\nla Murabaha",
-  "tsize": 38,
-  "sub_top": 232,
+  "tsize": 36,
   "subtitle": "Acheter autrement, sans prêt à intérêt.",
-  "pose": "think",
   "rows": [
     {
-      "h": 0.8,
+      "h": 1,
       "panels": [
         {
-          "tone": "navy",
-          "icon": "🏠",
-          "iconpos": "left",
-          "title": "L'institution achète le bien, puis te le revend.",
-          "text": "Avec une <b>marge connue dès le départ</b>, payée par versements."
-        }
-      ]
-    },
-    {
-      "h": 2.1,
-      "panels": [
-        {
-          "num": 1,
-          "color": "blue",
-          "icon": "🔑",
-          "isize": 54,
-          "title": "Tu choisis",
-          "text": "La maison que tu veux acheter.",
+          "scene": "house",
+          "cap": "1. Tu choisis la maison que tu veux acheter.",
           "hl": "Ton projet"
         },
         {
-          "num": 2,
-          "color": "orange",
-          "icon": "🏦",
-          "isize": 54,
-          "title": "Elle achète",
-          "text": "L'institution devient propriétaire du bien.",
+          "scene": "money",
+          "cap": "2. L'institution l'achète : elle en devient propriétaire.",
           "hl": "Achat réel"
         },
         {
-          "num": 3,
-          "color": "green",
+          "tone": "navy",
           "icon": "🤝",
-          "isize": 54,
-          "title": "Elle revend",
-          "text": "À toi, avec une marge fixée à l'avance.",
+          "isize": 44,
+          "center": true,
+          "title": "3. Elle te la revend",
+          "stat": null,
+          "text": "Avec une marge fixée dès le départ.",
           "hl": "Prix connu"
+        },
+        {
+          "scene": "bills",
+          "cap": "Tu paies par versements, sans intérêt.",
+          "hl": "Marge connue"
         }
       ]
     },
     {
-      "h": 0.8,
-      "inset": 26,
+      "h": 1,
+      "inset": 52,
       "panels": [
         {
           "tone": "light",
           "warn": true,
           "icon": "⚠️",
-          "iconpos": "left",
-          "isize": 46,
-          "title": "Compare le coût total.",
-          "text": "Fais valider le contrat par un comité de conformité."
+          "isize": 44,
+          "center": true,
+          "title": "Compare le coût total",
+          "text": "La marge n'est pas gratuite : fais les calculs."
+        },
+        {
+          "tone": "navy",
+          "icon": "📜",
+          "isize": 44,
+          "center": true,
+          "title": "Contrat validé",
+          "text": "Fais-le valider par un comité de conformité."
+        },
+        {
+          "scene": "family",
+          "q": "Une maison sans intérêt, tu y songes&nbsp;?",
+          "cm": "Dis-le en commentaire&nbsp;!"
         }
       ]
     }
   ],
-  "cta": "Tu veux un comparatif complet&nbsp;?",
-  "slug": "murabaha-maison"
+  "slug": "murabaha-maison",
+  "pose": "think",
+  "sub_top": 222
 }
