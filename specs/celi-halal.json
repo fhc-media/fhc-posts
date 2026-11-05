@@ -1,0 +1,69 @@
+{
+  "title": "Un CELI <mark>halal</mark> ?\nOui, si tu choisis bien",
+  "tsize": 37,
+  "sub_top": 232,
+  "subtitle": "7 000 $ de plafond en 2026.",
+  "pose": "smile",
+  "rows": [
+    {
+      "h": 0.8,
+      "panels": [
+        {
+          "tone": "navy",
+          "icon": "🍁",
+          "iconpos": "left",
+          "title": "Les gains du CELI sont libres d'impôt.",
+          "text": "À toi de les placer dans des produits <b>sans intérêt</b>."
+        }
+      ]
+    },
+    {
+      "h": 2.0,
+      "panels": [
+        {
+          "num": 1,
+          "color": "green",
+          "icon": "✅",
+          "isize": 54,
+          "title": "Autorisé",
+          "text": "Actions et FNB conformes à la charia.",
+          "hl": "Croissance"
+        },
+        {
+          "num": 2,
+          "color": "red",
+          "icon": "❌",
+          "isize": 54,
+          "title": "À éviter",
+          "text": "CPG, obligations, comptes qui paient de l'intérêt.",
+          "hl": "Riba"
+        },
+        {
+          "num": 3,
+          "color": "blue",
+          "icon": "📈",
+          "isize": 54,
+          "title": "Avantage",
+          "text": "Aucun impôt sur les gains ni au retrait.",
+          "hl": "Libre d'impôt"
+        }
+      ]
+    },
+    {
+      "h": 0.8,
+      "inset": 26,
+      "panels": [
+        {
+          "tone": "light",
+          "icon": "🗓️",
+          "iconpos": "left",
+          "isize": 46,
+          "title": "Droits cumulés : <em>109 000 $</em> en 2026",
+          "text": "Si tu as 18 ans depuis 2009 et n'as jamais cotisé."
+        }
+      ]
+    }
+  ],
+  "cta": "Tu maximises ton CELI cette année&nbsp;?",
+  "slug": "celi-halal"
+}

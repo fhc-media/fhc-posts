@@ -1,12 +1,78 @@
 {
   "slug": "zakat-calcul",
-  "title": "LA ZAKAT :\nCOMMENT LA CALCULER ?",
-  "blocks": [
-    {"type": "intro", "text": "La zakat est une obligation, pas un don libre : <b>2,5&nbsp;%</b> de ton patrimoine, chaque année lunaire, dès qu'il dépasse un seuil précis (le nisab)."},
-    {"type": "dots"},
-    {"type": "callout", "lines": ["Patrimoine zakatable <b>−</b> Dettes immédiates"], "result": "× 2,5 % = ZAKAT DUE"},
-    {"type": "stats", "items": [{"label": "Nisab or", "value": "≈ 85 g"}, {"label": "Nisab argent", "value": "≈ 595 g"}]},
-    {"type": "note", "text": "Compte : liquidités, or/argent, épargne,<br>placements, stock commercial — détenus 1 an lunaire"}
+  "title": "La zakat :\ncomment la <mark>calculer</mark>&nbsp;?",
+  "subtitle": "Un pilier de l'islam, pas une option.",
+  "sub_top": 232,
+  "pose": "think",
+  "rows": [
+    {
+      "h": 0.8,
+      "panels": [
+        {
+          "tone": "navy",
+          "icon": "🕌",
+          "iconpos": "left",
+          "title": "C'est une obligation, pas un don libre.",
+          "text": "<b>2,5 %</b> de ton patrimoine zakatable, chaque année lunaire, dès qu'il dépasse le <b>nisab</b>."
+        }
+      ]
+    },
+    {
+      "h": 2.0,
+      "panels": [
+        {
+          "num": 1,
+          "color": "blue",
+          "icon": "💰",
+          "title": "Additionne",
+          "text": "Liquidités, épargne, or, argent, placements, stock.",
+          "hl": "Détenu 1 an lunaire",
+          "isize": 54
+        },
+        {
+          "num": 2,
+          "color": "orange",
+          "icon": "🧾",
+          "title": "Soustrais",
+          "text": "Tes dettes à payer sans tarder.",
+          "hl": "Patrimoine net",
+          "isize": 54
+        },
+        {
+          "num": 3,
+          "color": "green",
+          "icon": "🧮",
+          "title": "Multiplie",
+          "text": "Si le net dépasse le nisab : ×&nbsp;2,5&nbsp;%.",
+          "hl": "= ta zakat due",
+          "isize": 54
+        }
+      ]
+    },
+    {
+      "h": 0.8,
+      "panels": [
+        {
+          "tone": "light",
+          "icon": "🥇",
+          "iconpos": "left",
+          "isize": 52,
+          "title": "Nisab or",
+          "stat": "≈ 85 g"
+        },
+        {
+          "tone": "light",
+          "icon": "🥈",
+          "iconpos": "left",
+          "isize": 52,
+          "title": "Nisab argent",
+          "stat": "≈ 595 g"
+        }
+      ],
+      "inset": 26
+    }
   ],
-  "tagline": "UN PILIER DE L'ISLAM, PAS UNE OPTION"
+  "cta": "Tu la calcules quand&nbsp;?",
+  "tsize": 40,
+  "xsize": 18
 }

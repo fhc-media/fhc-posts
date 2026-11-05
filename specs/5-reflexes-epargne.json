@@ -1,0 +1,64 @@
+{
+  "title": "5 réflexes d'épargne\nqui <mark>changent tout</mark>",
+  "tsize": 37,
+  "sub_top": 232,
+  "subtitle": "La constance bat le montant.",
+  "pose": "smile",
+  "rows": [
+    {
+      "h": 1.6,
+      "panels": [
+        {
+          "num": 1,
+          "color": "blue",
+          "icon": "💳",
+          "isize": 50,
+          "title": "Paie-toi d'abord",
+          "text": "Virement automatique le jour de paie."
+        },
+        {
+          "num": 2,
+          "color": "green",
+          "icon": "🛡️",
+          "isize": 50,
+          "title": "Fonds d'urgence",
+          "text": "3 à 6 mois de dépenses."
+        },
+        {
+          "num": 3,
+          "color": "orange",
+          "icon": "📒",
+          "isize": 50,
+          "title": "Budget",
+          "text": "Sache où va chaque dollar."
+        }
+      ]
+    },
+    {
+      "h": 1.7,
+      "inset": 18,
+      "panels": [
+        {
+          "num": 4,
+          "color": "red",
+          "icon": "⚠️",
+          "isize": 50,
+          "title": "Dettes à intérêt",
+          "text": "Élimine-les en premier.",
+          "hl": "Priorité"
+        },
+        {
+          "num": 5,
+          "color": "purple",
+          "icon": "🌱",
+          "isize": 50,
+          "title": "Investis halal",
+          "text": "Même 25 $ par paie, régulièrement.",
+          "hl": "Petit à petit"
+        }
+      ]
+    }
+  ],
+  "cta": "Lequel te manque le plus&nbsp;?",
+  "slug": "5-reflexes-epargne"
+}

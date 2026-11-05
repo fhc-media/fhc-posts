@@ -1,0 +1,70 @@
+{
+  "title": "3 critères pour qu'une\naction soit <mark>halal</mark>",
+  "tsize": 37,
+  "sub_top": 232,
+  "subtitle": "Les seuils de la norme AAOIFI.",
+  "pose": "think",
+  "rows": [
+    {
+      "h": 0.8,
+      "panels": [
+        {
+          "tone": "navy",
+          "icon": "🔍",
+          "iconpos": "left",
+          "title": "Avant d'acheter, on vérifie 3 ratios.",
+          "text": "Le secteur doit déjà être permis (pas d'alcool, de jeu ni d'intérêt)."
+        }
+      ]
+    },
+    {
+      "h": 2.0,
+      "panels": [
+        {
+          "num": 1,
+          "color": "blue",
+          "icon": "🏦",
+          "isize": 54,
+          "title": "Dette",
+          "text": "Dette totale sous <b>30 %</b> de la capitalisation.",
+          "hl": "&lt; 30 %"
+        },
+        {
+          "num": 2,
+          "color": "orange",
+          "icon": "💵",
+          "isize": 54,
+          "title": "Intérêts",
+          "text": "Liquidités et titres à intérêt sous <b>30 %</b>.",
+          "hl": "&lt; 30 %"
+        },
+        {
+          "num": 3,
+          "color": "green",
+          "icon": "🚫",
+          "isize": 54,
+          "title": "Revenus impurs",
+          "text": "Revenus non conformes sous <b>5 %</b> du total.",
+          "hl": "&lt; 5 %"
+        }
+      ]
+    },
+    {
+      "h": 0.8,
+      "inset": 26,
+      "panels": [
+        {
+          "tone": "light",
+          "warn": true,
+          "icon": "⚠️",
+          "iconpos": "left",
+          "isize": 46,
+          "title": "Les comités de conformité peuvent différer.",
+          "text": "Vérifie toujours la source avant d'investir."
+        }
+      ]
+    }
+  ],
+  "cta": "Tu en vérifies une cette semaine&nbsp;?",
+  "slug": "criteres-aaoifi"
+}
