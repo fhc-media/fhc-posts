@@ -1,0 +1,12 @@
+{
+  "slug": "zakat-calcul",
+  "title": "LA ZAKAT :\nCOMMENT LA CALCULER ?",
+  "blocks": [
+    {"type": "intro", "text": "La zakat est une obligation, pas un don libre : <b>2,5&nbsp;%</b> de ton patrimoine, chaque année lunaire, dès qu'il dépasse un seuil précis (le nisab)."},
+    {"type": "dots"},
+    {"type": "callout", "lines": ["Patrimoine zakatable <b>−</b> Dettes immédiates"], "result": "× 2,5 % = ZAKAT DUE"},
+    {"type": "stats", "items": [{"label": "Nisab or", "value": "≈ 85 g"}, {"label": "Nisab argent", "value": "≈ 595 g"}]},
+    {"type": "note", "text": "Compte : liquidités, or/argent, épargne,<br>placements, stock commercial — détenus 1 an lunaire"}
+  ],
+  "tagline": "UN PILIER DE L'ISLAM, PAS UNE OPTION"
+}
