@@ -21,7 +21,7 @@
             "💻",
             "📱"
           ],
-          "mb": 18,
+          "mb": 30,
           "bullets": [
             "Courtier en ligne à faibles frais",
             "Compare les frais et l'interface",
@@ -37,10 +37,10 @@
           "icons": [
             "🌍"
           ],
-          "mb": 6,
+          "mb": 12,
           "bullets": [
             "Diversifie avec des fonds, pas des titres isolés",
-            "Ex. : UMMA (actions mondiales conformes)",
+            "Ex. : UMMA (actions mondiales)",
             "Un seul achat = diversification instantanée"
           ],
           "hl": "Moins de stress, plus de sérénité"
@@ -72,7 +72,7 @@
             "🗓️",
             "💰"
           ],
-          "mb": 6,
+          "mb": 12,
           "ex": "Exemple :",
           "bullets": [
             "250 $ par semaine (4 semaines)",
@@ -90,7 +90,7 @@
             "📈",
             "🌱"
           ],
-          "mb": 18,
+          "mb": 30,
           "bullets": [
             "Vérifie ta valeur nette chaque trimestre",
             "Regarde la tendance sur des années, pas des semaines"
@@ -98,9 +98,17 @@
           "hl": "Ce qui se mesure s'améliore"
         }
       ]
+    },
+    {
+      "px": 58,
+      "inset": 84,
+      "panels": [
+        {
+          "banner": "Ton premier 1&nbsp;000&nbsp;$ : le début de quelque chose de grand."
+        }
+      ]
     }
   ],
-  "cta": "Ton premier 1&nbsp;000&nbsp;$ : le début de quelque chose de grand.",
-  "cbsize": 15,
-  "cisize": 70
+  "cbsize": 14.5,
+  "cisize": 62
 }

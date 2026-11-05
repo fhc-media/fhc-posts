@@ -87,6 +87,7 @@ svg.scene{position:absolute;inset:0;width:100%%;height:100%%}
 .scene-p .hl{position:absolute;bottom:9px;left:9px;z-index:2;font-size:%(hlsize)spx;max-width:92%%}
 .q{position:relative;z-index:2;margin:10px 10px 0;align-self:flex-start;background:%(y)s;color:#12244a;font-family:'Kalam',cursive;font-weight:700;font-size:21px;line-height:1.2;padding:5px 12px;border-radius:9px;transform:rotate(-2deg);box-shadow:0 4px 10px rgba(0,0,0,.3)}
 .cm{position:absolute;bottom:10px;left:10px;z-index:2;background:rgba(9,18,42,.92);color:#fff;font-family:'Kalam',cursive;font-weight:700;font-size:18px;padding:5px 14px;border-radius:16px}
+.banner{background:%(y)s;color:#12244a;font-family:'Kalam',cursive;font-weight:700;font-size:23px;line-height:1.15;text-align:center;align-items:center;justify-content:center;border-radius:12px;transform:rotate(-.6deg);box-shadow:0 4px 10px rgba(0,0,0,.25)}
 /* colonnes */
 .colc{padding:56px 9px 10px;background:#f6fbfa;color:#12244a;align-items:center;justify-content:flex-start;gap:7px;border:2px solid var(--c);border-radius:16px;text-align:left}
 .cnum{position:absolute;top:-2px;left:50%%;transform:translateX(-50%%);width:50px;height:50px;border-radius:50%%;background:var(--c);color:#fff;font-weight:800;font-size:28px;display:flex;align-items:center;justify-content:center;border:3px solid #fff;box-shadow:0 4px 10px rgba(0,0,0,.3);z-index:3}
@@ -238,6 +239,8 @@ def col_panel(p):
 
 
 def panel(p):
+    if p.get("banner"):
+        return f'<div class="p banner">{p["banner"]}</div>'
     if p.get("col"):
         return col_panel(p)
     if p.get("scene"):
@@ -287,7 +290,8 @@ def build_html(spec):
         h = r.get("h", 1)
         ins = f';margin:0 {r["inset"]}px' if r.get("inset") else ""
         cols = " ".join(f'minmax(0,{p.get("w", 1)}fr)' for p in r["panels"])
-        rows.append(f'<div class="row" style="flex:{h} 1 0;display:grid;grid-template-columns:{cols}{ins}">{"".join(panel(p) for p in r["panels"])}</div>')
+        fl = f'0 0 {r["px"]}px' if r.get("px") else f'{h} 1 0'
+        rows.append(f'<div class="row" style="flex:{fl};display:grid;grid-template-columns:{cols}{ins}">{"".join(panel(p) for p in r["panels"])}</div>')
     cta = f'<div class="cta">{spec["cta"]}</div>' if spec.get("cta") else ""
     css = CSS
     for k, v in dict(f=FONTS, y=YELLOW, g=GOLD, tsize=spec.get("tsize", 40), psize=spec.get("psize", 23),
