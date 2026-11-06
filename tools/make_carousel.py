@@ -36,9 +36,9 @@ body{background:linear-gradient(#eaf6f2,#dcefe7)}
 .card.solo .ct{font-size:37px}
 .ct b{font-weight:800;background:linear-gradient(transparent 62%,rgba(246,223,75,.85) 62%)}
 .cic{flex:none;width:110px;height:110px}
-.cover-top{height:470px}
-.brushc{position:absolute;left:44px;right:44px;top:56px;z-index:2;background:rgba(8,18,44,.9);padding:34px 40px 40px;border-radius:6px 36px 6px 36px}
-.ctitle{font-weight:800;font-size:60px;line-height:1.16;color:#fff}
+.cover-top{height:440px}
+.brushc{position:absolute;left:44px;right:44px;top:34px;z-index:2;background:rgba(8,18,44,.9);padding:26px 40px 30px;border-radius:6px 36px 6px 36px}
+.ctitle{font-weight:800;font-size:56px;line-height:1.16;color:#fff}
 .ctitle mark{background:#f6df4b;color:#12244a;padding:0 14px;border-radius:8px;display:inline-block;transform:rotate(-2deg);margin:2px 0}
 .big-hl{align-self:flex-start;background:#f6df4b;color:#12244a;font-family:'Kalam',cursive;font-weight:700;font-size:58px;line-height:1.2;padding:12px 30px;border-radius:16px;transform:rotate(-1.5deg);box-shadow:0 5px 14px rgba(0,0,0,.25)}
 .pill{align-self:flex-start;background:#12244a;color:#fff;font-weight:700;font-size:36px;padding:16px 36px;border-radius:50px}
@@ -58,6 +58,9 @@ body{background:linear-gradient(#eaf6f2,#dcefe7)}
 .cta2{background:#f6df4b;color:#12244a;border-radius:20px;padding:14px 26px;font-family:'Kalam',cursive;font-weight:700;font-size:32px;line-height:1.2;text-align:center;transform:rotate(-1deg);box-shadow:0 4px 12px rgba(0,0,0,.25)}
 .disc{font-size:20px;line-height:1.3;text-align:center;color:#3a4a66;font-weight:500}
 .foot{flex:none}
+.hook{position:absolute;left:-50px;right:-50px;top:392px;z-index:5;transform:rotate(-6deg);background:linear-gradient(180deg,#ff4d6d,#e0263f);color:#fff;font-family:'Kalam',cursive;font-weight:700;font-size:52px;line-height:1.1;text-align:center;padding:16px 90px 20px;box-shadow:0 8px 20px rgba(0,0,0,.35);outline:4px dashed rgba(255,255,255,.75);outline-offset:-12px}
+.cover-main{padding-top:215px;gap:24px}
+.cover-main .big-hl{font-size:46px;padding:10px 26px}
 """
 
 
@@ -90,7 +93,10 @@ def slide_html(s, n, total, kicker):
         title = s["title"].replace("\n", "<br>")
         top_extra = f'<div class="brushc"><div class="ctitle">{title}</div></div>'
         inner = f'<div class="big-hl">{s["hook"]}</div><div class="pill">{s["swipe"]}</div>'
-        return frame(inner, 0, total, "", top_h=500, top_extra=top_extra).replace('class="top"', 'class="top cover-top"')
+        h = frame(inner, 0, total, "", top_h=440, top_extra=top_extra).replace('class="top"', 'class="top cover-top"')
+        if s.get("banner"):
+            h = h.replace('<div class="main">', '<div class="main cover-main">').replace('<div class="foot"', f'<div class="hook">{s["banner"]}</div><div class="foot"', 1)
+        return h
     if t == "cards":
         cards = "".join(
             f'<div class="card" style="--c:{COL[c["color"]]}"><div class="num">{c["num"]}</div><div class="ct">{c["text"]}</div>{img(c["icon"], "cic")}</div>'

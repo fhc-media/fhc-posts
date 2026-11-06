@@ -1,12 +1,13 @@
 {
-  "slug": "impot-strategie2",
+  "slug": "impot-strategie3",
   "kicker": "Tu paies trop d'impôt si…",
   "slides": [
     {
       "type": "cover",
       "title": "L'une des plus grosses erreurs d'impôt des Québécois n'est pas ce qu'ils <mark>déduisent</mark>.",
       "hook": "C'est ce qu'ils n'ont jamais planifié avant.",
-      "swipe": "Glisse : 8 signes à vérifier ➜"
+      "swipe": "Glisse : 8 signes à vérifier ➜",
+      "banner": "Et si tu payais trop d'impôt<br>sans le savoir ?"
     },
     {
       "type": "cards",
