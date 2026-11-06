@@ -1,0 +1,206 @@
+{
+  "slug": "fnb-halal-rendements",
+  "kicker": "FNB halal : 5 ans",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "La Bourse chute… et les <mark>FNB halal</mark> ?",
+      "hook": "S&P 500 : −4,4 % jeudi. Voici 5 ans de rendements.",
+      "swipe": "Glisse : 1 FNB par image ➜",
+      "banner": "Panique en Bourse ?<br>Regarde les chiffres."
+    },
+    {
+      "type": "etf",
+      "ticker": "SPUS",
+      "name": "SP Funds S&P 500 Sharia",
+      "desc": "Actions de l'S&P 500 filtrées charia · frais 0,45 %",
+      "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026*"
+      ],
+      "vals": [
+        35.9,
+        -22.8,
+        34.2,
+        26.5,
+        19.8,
+        14.9
+      ],
+      "bench": [
+        28.8,
+        -18.2,
+        26.2,
+        24.9,
+        17.7,
+        null
+      ],
+      "foot": "Rendement total / NAV, en $ US. *2026 : du 1er janv. au 31 oct. (avant la chute du 5 nov.). n.d. : donnée introuvable. Sources : SP Funds, YCharts.",
+      "kicker": "Rendements annuels"
+    },
+    {
+      "type": "etf",
+      "ticker": "HLAL",
+      "name": "Wahed FTSE USA Shariah",
+      "desc": "Actions américaines conformes · frais 0,50 %",
+      "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026*"
+      ],
+      "vals": [
+        28.6,
+        -17.6,
+        30.2,
+        16.6,
+        18.5,
+        15.6
+      ],
+      "bench": [
+        28.8,
+        -18.2,
+        26.2,
+        24.9,
+        17.7,
+        null
+      ],
+      "foot": "Rendement total / NAV, en $ US. *2026 : du 1er janv. au 31 oct. (avant la chute du 5 nov.). n.d. : donnée introuvable. Sources : AAII (NAV), YCharts.",
+      "kicker": "Rendements annuels"
+    },
+    {
+      "type": "etf",
+      "ticker": "UMMA",
+      "name": "Wahed Dow Jones Islamic World",
+      "desc": "Grandes sociétés conformes · frais 0,65 %",
+      "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026*"
+      ],
+      "vals": [
+        null,
+        null,
+        19.2,
+        5.0,
+        26.4,
+        21.4
+      ],
+      "bench": [
+        28.8,
+        -18.2,
+        26.2,
+        24.9,
+        17.7,
+        null
+      ],
+      "foot": "Rendement total / NAV, en $ US. *2026 : du 1er janv. au 31 oct. (avant la chute du 5 nov.). n.d. : donnée introuvable. Lancé en janv. 2022. Sources : AAII (NAV), Koalagains.",
+      "kicker": "Rendements annuels"
+    },
+    {
+      "type": "etf",
+      "ticker": "SPWO",
+      "name": "SP Funds S&P World (ex-US)",
+      "desc": "Actions conformes hors É.-U. · frais 0,55 %",
+      "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026*"
+      ],
+      "vals": [
+        null,
+        null,
+        null,
+        8.9,
+        26.7,
+        15.2
+      ],
+      "bench": [
+        28.8,
+        -18.2,
+        26.2,
+        24.9,
+        17.7,
+        null
+      ],
+      "foot": "Rendement total / NAV, en $ US. *2026 : du 1er janv. au 31 oct. (avant la chute du 5 nov.). n.d. : donnée introuvable. Lancé en déc. 2023. Sources : AAII (NAV), SP Funds.",
+      "kicker": "Rendements annuels"
+    },
+    {
+      "type": "etf",
+      "ticker": "WSHR",
+      "name": "Wealthsimple Shariah World Equity",
+      "desc": "FNB canadien (NEO), en $ CA · frais ≈ 0,56 %",
+      "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026*"
+      ],
+      "vals": [
+        null,
+        -11.3,
+        11.9,
+        12.2,
+        5.4,
+        14.8
+      ],
+      "bench": [
+        28.8,
+        -18.2,
+        26.2,
+        24.9,
+        17.7,
+        null
+      ],
+      "foot": "Rendement total, en $ CA. *2026 : au 30 oct. n.d. : fonds lancé en mai 2021 (année partielle). Sources : YCharts, TrackInsight.",
+      "kicker": "Rendements annuels"
+    },
+    {
+      "type": "cards",
+      "kicker": "À retenir",
+      "cards": [
+        {
+          "num": "−",
+          "color": "red",
+          "icon": "📉",
+          "text": "2022 : <b>−22,8 %</b> pour SPUS et <b>−17,6 %</b> pour HLAL (S&P 500 : −18,2 %)."
+        },
+        {
+          "num": "+",
+          "color": "green",
+          "icon": "📈",
+          "text": "2023 : <b>+34,2 %</b> pour SPUS et <b>+30,2 %</b> pour HLAL (S&P 500 : +26,2 %)."
+        },
+        {
+          "num": "⏱",
+          "color": "blue",
+          "icon": "⏳",
+          "text": "Manquer les 10 meilleurs jours en 20 ans : le S&P 500 passe de <b>10,4 %</b> à <b>6,1 %</b> par an (J.P. Morgan)."
+        }
+      ]
+    },
+    {
+      "type": "closing",
+      "kicker": "Reste informé, pas paniqué",
+      "h": "Les rendements passés ne garantissent pas l'avenir.",
+      "hl": "Chaque fonds baisse aussi.",
+      "text": "Les FNB américains impliquent du change et, selon ton compte, une retenue d'impôt américaine. Vérifie la conformité auprès du comité de chaque fonds.",
+      "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+      "disc": "Information générale, pas un conseil financier ou religieux personnalisé."
+    }
+  ]
+}

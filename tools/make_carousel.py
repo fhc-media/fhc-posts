@@ -62,7 +62,7 @@ body{background:linear-gradient(#eaf6f2,#dcefe7)}
 .tick{background:#12244a;color:#f6df4b;font-weight:800;font-size:60px;padding:6px 30px;border-radius:20px;letter-spacing:1px}
 .etfn{font-weight:700;font-size:30px;line-height:1.2;color:#12244a}
 .etfn small{display:block;font-weight:500;font-size:23px;opacity:.85;margin-top:4px}
-.chart{position:relative;flex:1;min-height:0;background:#f8fcfb;border:4px solid #36a27a;border-radius:30px;padding:0}
+.chart{position:relative;flex:none;height:400px;background:#f8fcfb;border:4px solid #36a27a;border-radius:30px;padding:0}
 .zero{position:absolute;left:28px;right:28px;height:3px;background:#12244a;opacity:.55}
 .grp{position:absolute;bottom:0;top:0;width:150px}
 .bar{position:absolute;width:56px;border-radius:8px}
@@ -102,31 +102,38 @@ def frame(inner, n, total, kicker, top_h=150, top_extra=""):
  <div class="tag">ÉPARGNER · INVESTIR · BÂTIR · UN AVENIR HALAL</div></div></div>"""
 
 
-def etf_chart(years, vals, bench, ymin=-30, ymax=45, H=330, W=972):
-    """Barres groupees : FNB (couleur) + S&P 500 (gris). Echelle commune pour comparer les diapos."""
-    top, bot = 56, 64            # marges haute / basse du graphique (px)
+def etf_chart(years, vals, bench, ymin=-30, ymax=45, H=400, W=972):
+    """Barres groupees : FNB (couleur, valeur au-dessus) + S&P 500 (gris, valeurs dans une rangee sous les annees)."""
+    top, bot = 50, 108
     plot = H - top - bot
     def y(v): return top + (ymax - v) / (ymax - ymin) * plot
     z = y(0)
     n = len(years)
     gw = (W - 56) / n
     out = [f'<div class="zero" style="top:{z:.1f}px"></div>']
+    fmt = lambda v: f"{v:+.1f}".replace(".", ",") + "%"
     for i, yr in enumerate(years):
-        gx = 28 + i * gw + (gw - 150) / 2
-        v, b = vals[i], bench[i]
-        def one(val, x, cls, color):
-            if val is None:
-                return f'<div class="bv {cls}" style="left:{x - 20 + 28:.1f}px;top:{z - 28:.1f}px;opacity:.6">n.d.</div>'
+        gx = 28 + i * gw
+        cx = gx + gw / 2
+        v, bv = vals[i], bench[i]
+        def bar(val, x, w, color, label):
             h = max(abs(val) / (ymax - ymin) * plot, 3)
             ty = z - h if val >= 0 else z
-            ly = ty - 28 if val >= 0 else ty + h + 4
-            txt = f"{val:+.1f}".replace(".", ",") + " %".replace(" ", "") if False else (f"{val:+.1f}".replace(".", ",") + "%")
-            return (f'<div class="bar" style="left:{x:.1f}px;top:{ty:.1f}px;height:{h:.1f}px;width:{56 if cls == "" else 40}px;background:{color}"></div>'
-                    f'<div class="bv {cls}" style="left:{x - 22 if cls == "" else x - 20:.1f}px;top:{ly:.1f}px">{txt}</div>')
-        red = "#d94c4c"
-        out.append(one(v, gx + 6, "", "#1f8a64" if (v or 0) >= 0 else red))
-        out.append(one(b, gx + 74, "s", "#9fb0c8"))
-        out.append(f'<div class="yl" style="left:{gx - 0:.1f}px">{yr}</div>')
+            res = f'<div class="bar" style="left:{x:.1f}px;top:{ty:.1f}px;height:{h:.1f}px;width:{w}px;background:{color}"></div>'
+            if label:
+                ly = ty - 30 if val >= 0 else ty + h + 4
+                res += f'<div class="bv" style="left:{x + w / 2 - 55:.1f}px;top:{ly:.1f}px;width:110px">{fmt(val)}</div>'
+            return res
+        if v is None:
+            out.append(f'<div class="bv" style="left:{cx - 70:.1f}px;top:{z - 32:.1f}px;width:70px;opacity:.55;font-size:22px">n.d.</div>')
+        else:
+            out.append(bar(v, cx - 62, 54, "#1f8a64" if v >= 0 else "#d94c4c", True))
+        if bv is not None:
+            out.append(bar(bv, cx + 4, 34, "#9fb0c8", False))
+        out.append(f'<div class="yl" style="left:{gx:.1f}px;width:{gw:.1f}px;bottom:46px">{yr}</div>')
+        sp = fmt(bv) if bv is not None else "n.d."
+        out.append(f'<div class="yl" style="left:{gx:.1f}px;width:{gw:.1f}px;bottom:12px;font-weight:600;font-size:21px;color:#5a6b86">{sp}</div>')
+    out.append('<div class="note" style="position:absolute;left:30px;bottom:-1px;display:none"></div>')
     return "".join(out)
 
 
@@ -141,8 +148,9 @@ def slide_html(s, n, total, kicker):
             h = h.replace('<div class="main">', '<div class="main cover-main">').replace('<div class="foot"', f'<div class="hook">{s["banner"]}</div><div class="foot"', 1)
         return h
     if t == "cards":
+        small = ' style="font-size:34px"' if len(s["cards"]) >= 3 else ""
         cards = "".join(
-            f'<div class="card" style="--c:{COL[c["color"]]}"><div class="num">{c["num"]}</div><div class="ct">{c["text"]}</div>{img(c["icon"], "cic")}</div>'
+            f'<div class="card" style="--c:{COL[c["color"]]}"><div class="num">{c["num"]}</div><div class="ct"{small}>{c["text"]}</div>{img(c["icon"], "cic")}</div>'
             for c in s["cards"])
         return frame(cards, n, total, kicker)
     if t == "chips":
@@ -163,7 +171,7 @@ def slide_html(s, n, total, kicker):
         ch = etf_chart(s["years"], s["vals"], s["bench"])
         inner = (f'<div class="etfh"><div class="tick">{s["ticker"]}</div><div class="etfn">{s["name"]}<small>{s["desc"]}</small></div></div>'
                  f'<div class="chart">{ch}</div>'
-                 f'<div class="leg"><span><i style="background:#1f8a64"></i>{s["ticker"]}</span><span><i style="background:#9fb0c8"></i>S&P 500</span></div>'
+                 f'<div class="leg"><span><i style="background:#1f8a64"></i>{s["ticker"]}</span><span><i style="background:#9fb0c8"></i>S&P 500 (valeur sous l’année)</span></div>'
                  f'<div class="note">{s["foot"]}</div>')
         return frame(inner, n, total, s.get("kicker", kicker))
     if t == "closing":
