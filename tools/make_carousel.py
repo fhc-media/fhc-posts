@@ -58,6 +58,21 @@ body{background:linear-gradient(#eaf6f2,#dcefe7)}
 .cta2{background:#f6df4b;color:#12244a;border-radius:20px;padding:14px 26px;font-family:'Kalam',cursive;font-weight:700;font-size:32px;line-height:1.2;text-align:center;transform:rotate(-1deg);box-shadow:0 4px 12px rgba(0,0,0,.25)}
 .disc{font-size:20px;line-height:1.3;text-align:center;color:#3a4a66;font-weight:500}
 .foot{flex:none}
+.etfh{display:flex;align-items:center;gap:22px}
+.tick{background:#12244a;color:#f6df4b;font-weight:800;font-size:60px;padding:6px 30px;border-radius:20px;letter-spacing:1px}
+.etfn{font-weight:700;font-size:30px;line-height:1.2;color:#12244a}
+.etfn small{display:block;font-weight:500;font-size:23px;opacity:.85;margin-top:4px}
+.chart{position:relative;flex:1;min-height:0;background:#f8fcfb;border:4px solid #36a27a;border-radius:30px;padding:0}
+.zero{position:absolute;left:28px;right:28px;height:3px;background:#12244a;opacity:.55}
+.grp{position:absolute;bottom:0;top:0;width:150px}
+.bar{position:absolute;width:56px;border-radius:8px}
+.bv{position:absolute;width:100px;text-align:center;font-weight:800;font-size:25px;color:#12244a;line-height:1}
+.bv.s{font-weight:700;font-size:20px;color:#5a6b86;width:80px}
+.yl{position:absolute;bottom:12px;width:150px;text-align:center;font-weight:700;font-size:26px;color:#12244a}
+.leg{display:flex;gap:30px;font-weight:600;font-size:24px;color:#12244a;align-items:center}
+.leg i{display:inline-block;width:26px;height:26px;border-radius:6px;margin-right:10px;vertical-align:middle}
+.note{font-size:20px;line-height:1.3;color:#3a4a66;font-weight:500}
+
 .hook{position:absolute;left:-50px;right:-50px;top:392px;z-index:5;transform:rotate(-6deg);background:linear-gradient(180deg,#ff4d6d,#e0263f);color:#fff;font-family:'Kalam',cursive;font-weight:700;font-size:52px;line-height:1.1;text-align:center;padding:16px 90px 20px;box-shadow:0 8px 20px rgba(0,0,0,.35);outline:4px dashed rgba(255,255,255,.75);outline-offset:-12px}
 .cover-main{padding-top:215px;gap:24px}
 .cover-main .big-hl{font-size:46px;padding:10px 26px}
@@ -85,6 +100,34 @@ def frame(inner, n, total, kicker, top_h=150, top_extra=""):
 <div class="foot" style="height:150px;position:relative;overflow:hidden;background:#0b3b6a">{SC.footer_bg()}<div class="glow"></div>
  <div class="in"><div class="logo"><div class="fhc">FHC{MP.LEAF}</div><div class="sep"></div><div class="ln">FINANCE<br><span class="g">HALAL</span><br>CANADA</div></div></div>
  <div class="tag">ÉPARGNER · INVESTIR · BÂTIR · UN AVENIR HALAL</div></div></div>"""
+
+
+def etf_chart(years, vals, bench, ymin=-30, ymax=45, H=330, W=972):
+    """Barres groupees : FNB (couleur) + S&P 500 (gris). Echelle commune pour comparer les diapos."""
+    top, bot = 56, 64            # marges haute / basse du graphique (px)
+    plot = H - top - bot
+    def y(v): return top + (ymax - v) / (ymax - ymin) * plot
+    z = y(0)
+    n = len(years)
+    gw = (W - 56) / n
+    out = [f'<div class="zero" style="top:{z:.1f}px"></div>']
+    for i, yr in enumerate(years):
+        gx = 28 + i * gw + (gw - 150) / 2
+        v, b = vals[i], bench[i]
+        def one(val, x, cls, color):
+            if val is None:
+                return f'<div class="bv {cls}" style="left:{x - 20 + 28:.1f}px;top:{z - 28:.1f}px;opacity:.6">n.d.</div>'
+            h = max(abs(val) / (ymax - ymin) * plot, 3)
+            ty = z - h if val >= 0 else z
+            ly = ty - 28 if val >= 0 else ty + h + 4
+            txt = f"{val:+.1f}".replace(".", ",") + " %".replace(" ", "") if False else (f"{val:+.1f}".replace(".", ",") + "%")
+            return (f'<div class="bar" style="left:{x:.1f}px;top:{ty:.1f}px;height:{h:.1f}px;width:{56 if cls == "" else 40}px;background:{color}"></div>'
+                    f'<div class="bv {cls}" style="left:{x - 22 if cls == "" else x - 20:.1f}px;top:{ly:.1f}px">{txt}</div>')
+        red = "#d94c4c"
+        out.append(one(v, gx + 6, "", "#1f8a64" if (v or 0) >= 0 else red))
+        out.append(one(b, gx + 74, "s", "#9fb0c8"))
+        out.append(f'<div class="yl" style="left:{gx - 0:.1f}px">{yr}</div>')
+    return "".join(out)
 
 
 def slide_html(s, n, total, kicker):
@@ -116,6 +159,13 @@ def slide_html(s, n, total, kicker):
         inner = (f'<div class="card solo" style="--c:{COL[c["color"]]}"><div class="num">{c["num"]}</div><div class="ct">{c["text"]}</div></div>'
                  f'<div class="flow">{boxes}</div><div class="big-hl" style="font-size:56px">{s["hl"]}</div>')
         return frame(inner, n, total, kicker)
+    if t == "etf":
+        ch = etf_chart(s["years"], s["vals"], s["bench"])
+        inner = (f'<div class="etfh"><div class="tick">{s["ticker"]}</div><div class="etfn">{s["name"]}<small>{s["desc"]}</small></div></div>'
+                 f'<div class="chart">{ch}</div>'
+                 f'<div class="leg"><span><i style="background:#1f8a64"></i>{s["ticker"]}</span><span><i style="background:#9fb0c8"></i>S&P 500</span></div>'
+                 f'<div class="note">{s["foot"]}</div>')
+        return frame(inner, n, total, s.get("kicker", kicker))
     if t == "closing":
         inner = (f'<div class="dark"><div class="h">{s["h"]}</div></div><div class="big-hl">{s["hl"]}</div>'
                  f'<div class="light">{s["text"]}</div><div class="cta2">{s["cta"]}</div><div class="disc">{s["disc"]}</div>')
