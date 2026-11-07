@@ -1,0 +1,48 @@
+{
+  "slug": "meme-salaire",
+  "kicker": "Même salaire, impôt différent",
+  "slides": [
+    {"type": "cover",
+     "title": "Même salaire. Mêmes placements. <mark>Impôt très différent</mark>.",
+     "hook": "La différence ? Pas le rendement.",
+     "swipe": "Glisse : 6 règles à connaître ➜",
+     "banner": "Les règles qu'elles<br>connaissent."},
+    {"type": "cards", "kicker": "Règle 1",
+     "cards": [
+      {"num": 1, "color": "gold", "icon": "🗂️", "text": "Un même placement n'est pas taxé pareil dans un <b>CELI, un REER ou un compte non enregistré</b>."},
+      {"num": 2, "color": "blue", "icon": "🧮", "text": "Intérêts, dividendes, gains en capital : chacun a son <b>traitement fiscal</b>."},
+      {"num": 3, "color": "green", "icon": "📍", "text": "Savoir quoi mettre où : la <b>localisation des actifs</b>."}
+     ]},
+    {"type": "cards", "kicker": "Règle 2",
+     "cards": [
+      {"num": 1, "color": "blue", "icon": "🏦", "text": "<b>REER</b> : tu déduis 18&nbsp;% du revenu de l'an dernier, max 33&nbsp;810&nbsp;$ en 2026. Droits reportables. L'impôt est <b>reporté, pas effacé</b>."},
+      {"num": 2, "color": "purple", "icon": "🏠", "text": "<b>CELIAPP</b> : déduction à l'entrée, retrait libre d'impôt pour une première propriété. 8&nbsp;000&nbsp;$ par an, 40&nbsp;000&nbsp;$ à vie."}
+     ]},
+    {"type": "cards", "kicker": "Règle 3",
+     "cards": [
+      {"num": 1, "color": "teal", "icon": "⏱️", "text": "Cotiser ne t'oblige pas à <b>déduire tout de suite</b>."},
+      {"num": 2, "color": "gold", "icon": "📈", "text": "Si ton revenu sera beaucoup plus élevé dans quelques années, ta déduction <b>vaudra plus</b> à ce moment-là."}
+     ]},
+    {"type": "cards", "kicker": "Règle 4",
+     "cards": [
+      {"num": 1, "color": "red", "icon": "📉", "text": "Dans un compte non enregistré, une perte en capital réalisée peut <b>effacer des gains imposables</b>."},
+      {"num": 2, "color": "green", "icon": "↩️", "text": "Inutilisée : reportable sur les <b>3 années précédentes</b>, ou plus tard <b>sans limite de temps</b>."}
+     ]},
+    {"type": "cards", "kicker": "Règle 5",
+     "cards": [
+      {"num": 1, "color": "purple", "icon": "🎁", "text": "Une action cotée avec un gros gain ? Donne-la <b>directement</b> à un organisme de bienfaisance."},
+      {"num": 2, "color": "green", "icon": "🧾", "text": "Tu reçois le <b>crédit pour don</b> et tu évites l'impôt sur le gain. Même générosité, facture fiscale différente."}
+     ]},
+    {"type": "cards", "kicker": "Règle 6",
+     "cards": [
+      {"num": 1, "color": "gold", "icon": "🏢", "text": "Ta propre entreprise ? <b>Salaire ou dividendes</b> change ton droit au REER, tes cotisations au RRQ et l'impôt à deux niveaux."},
+      {"num": 2, "color": "red", "icon": "⚠️", "text": "Trop de revenus passifs dans ta société peut te coûter la <b>déduction pour petite entreprise</b>."}
+     ]},
+    {"type": "closing", "kicker": "Le fil conducteur",
+     "h": "L'impôt n'est pas qu'un chiffre qu'on subit.",
+     "hl": "C'est un levier qu'on apprend à comprendre.",
+     "text": "Quel que soit le compte, choisis des placements conformes (sans intérêt) et valide ta situation avec un comptable.",
+     "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+     "disc": "Information générale, pas un avis fiscal personnalisé."}
+  ]
+}
