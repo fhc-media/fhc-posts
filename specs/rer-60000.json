@@ -1,0 +1,88 @@
+{
+  "slug": "rer-60000",
+  "kicker": "REER : tes droits",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "60 000 $ de revenu = <mark>10 800 $</mark> de droits REER",
+      "hook": "C'est 18 % de ton revenu gagné l'an dernier.",
+      "swipe": "Glisse : comment ça marche ➜",
+      "banner": "Combien peux-tu cotiser<br>au REER ?"
+    },
+    {
+      "type": "cards",
+      "kicker": "Le calcul",
+      "cards": [
+        {
+          "num": 1,
+          "color": "gold",
+          "icon": "💼",
+          "text": "Revenu gagné en 2025 : <b>60 000 $</b>."
+        },
+        {
+          "num": 2,
+          "color": "blue",
+          "icon": "🧮",
+          "text": "× 18 % = <b>10 800 $</b> de droits REER pour 2026."
+        },
+        {
+          "num": 3,
+          "color": "purple",
+          "icon": "📊",
+          "text": "Maximum en 2026 : <b>33 810 $</b>, atteint vers 187 800 $ de revenu."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "Ce que ça change",
+      "cards": [
+        {
+          "num": 1,
+          "color": "green",
+          "icon": "🧾",
+          "text": "Ta cotisation est <b>déductible</b> : ton impôt baisse."
+        },
+        {
+          "num": 2,
+          "color": "teal",
+          "icon": "🌱",
+          "text": "L'argent croît <b>à l'abri de l'impôt</b>."
+        },
+        {
+          "num": 3,
+          "color": "gold",
+          "icon": "💵",
+          "text": "Tes retraits sont <b>imposés comme un revenu</b>."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "À savoir",
+      "cards": [
+        {
+          "num": "!",
+          "color": "red",
+          "icon": "⏳",
+          "text": "C'est un <b>report d'impôt</b>, pas une exemption."
+        },
+        {
+          "num": "?",
+          "color": "blue",
+          "icon": "📄",
+          "text": "Ton plafond exact est sur ton <b>avis de cotisation de l'ARC</b>. Il peut différer de 18 % : facteur d'équivalence, droits reportés."
+        }
+      ]
+    },
+    {
+      "type": "closing",
+      "kicker": "Date limite",
+      "h": "REER ou CELI ? Ça dépend de ton revenu et de ta situation.",
+      "hl": "Cotise avant le 1er mars 2027.",
+      "text": "C'est la date limite pour déduire une cotisation de l'année 2026. Quel que soit le compte, choisis des placements conformes (sans intérêt).",
+      "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+      "disc": "Information générale, pas un avis fiscal ou financier personnalisé."
+    }
+  ]
+}
