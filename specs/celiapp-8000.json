@@ -1,0 +1,34 @@
+{
+  "slug": "celiapp-8000",
+  "kicker": "CELIAPP : ta première propriété",
+  "slides": [
+    {"type": "cover",
+     "title": "8&nbsp;000&nbsp;$ dans un CELIAPP. Ton impôt baisse <mark>maintenant</mark>.",
+     "hook": "Et ton retrait est libre d'impôt plus tard.",
+     "swipe": "Glisse : les règles du jeu ➜",
+     "banner": "Premier achat immobilier&nbsp;?<br>Lis ceci."},
+    {"type": "cards", "kicker": "Les plafonds",
+     "cards": [
+      {"num": 1, "color": "gold", "icon": "📅", "text": "Cotisation maximale : <b>8&nbsp;000&nbsp;$ par année</b>."},
+      {"num": 2, "color": "blue", "icon": "🏁", "text": "Plafond à vie : <b>40&nbsp;000&nbsp;$</b>."},
+      {"num": 3, "color": "purple", "icon": "↪️", "text": "Droits inutilisés reportables, <b>jusqu'à 8&nbsp;000&nbsp;$</b> : donc 16&nbsp;000&nbsp;$ possibles une année."}
+     ]},
+    {"type": "cards", "kicker": "Les avantages",
+     "cards": [
+      {"num": 1, "color": "green", "icon": "🧾", "text": "Cotisations <b>déductibles</b> de ton revenu imposable."},
+      {"num": 2, "color": "teal", "icon": "🏠", "text": "Retrait admissible pour une première propriété : <b>libre d'impôt</b>."}
+     ]},
+    {"type": "cards", "kicker": "Exemple",
+     "cards": [
+      {"num": 1, "color": "gold", "icon": "💰", "text": "Taux marginal de <b>30&nbsp;%</b>, cotisation de <b>8&nbsp;000&nbsp;$</b>."},
+      {"num": 2, "color": "green", "icon": "📉", "text": "Ton impôt baisse d'environ <b>2&nbsp;400&nbsp;$</b>."},
+      {"num": 3, "color": "red", "icon": "⚠️", "text": "Attention : dépasser ton plafond entraîne une <b>pénalité de 1&nbsp;% par mois</b>."}
+     ]},
+    {"type": "closing", "kicker": "Avant d'ouvrir",
+     "h": "Vérifie tes conditions d'admissibilité sur canada.ca.",
+     "hl": "Toi, tu as déjà ouvert un CELIAPP&nbsp;?",
+     "text": "Dis-le en commentaire. Et choisis des placements conformes (sans intérêt) dans ton compte.",
+     "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+     "disc": "Information générale, pas un avis fiscal ou financier personnalisé."}
+  ]
+}

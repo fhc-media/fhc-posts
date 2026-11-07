@@ -1,0 +1,32 @@
+{
+  "slug": "reee-2500",
+  "kicker": "REEE : la subvention d'Ottawa",
+  "slides": [
+    {"type": "cover",
+     "title": "2&nbsp;500&nbsp;$ par année dans un REEE. Ottawa ajoute <mark>500&nbsp;$</mark>.",
+     "hook": "C'est la SCEE : 20&nbsp;% de ta cotisation, peu importe ton revenu.",
+     "swipe": "Glisse : ce qu'il faut savoir ➜",
+     "banner": "Tu laisses peut-être<br>de l'argent sur la table."},
+    {"type": "cards", "kicker": "Les limites",
+     "cards": [
+      {"num": 1, "color": "gold", "icon": "🎁", "text": "Maximum de <b>500&nbsp;$ de subvention</b> par année, par enfant."},
+      {"num": 2, "color": "blue", "icon": "🏁", "text": "Plafond à vie de <b>7&nbsp;200&nbsp;$</b> par enfant (pour 36&nbsp;000&nbsp;$ cotisés)."}
+     ]},
+    {"type": "cards", "kicker": "Le report",
+     "cards": [
+      {"num": 1, "color": "green", "icon": "↪️", "text": "Les droits inutilisés <b>se reportent</b> : cotise 5&nbsp;000&nbsp;$ une année pour aller chercher <b>1&nbsp;000&nbsp;$</b>."},
+      {"num": 2, "color": "red", "icon": "🚧", "text": "Le report a une limite : <b>1&nbsp;000&nbsp;$ de subvention par année</b>, pas plus."}
+     ]},
+    {"type": "cards", "kicker": "En pratique",
+     "cards": [
+      {"num": 1, "color": "teal", "icon": "🗓️", "text": "2&nbsp;500&nbsp;$ par année, c'est <b>208&nbsp;$ par mois</b>."},
+      {"num": 2, "color": "purple", "icon": "👨‍👩‍👧", "text": "Beaucoup de parents <b>laissent cet argent sur la table</b>."}
+     ]},
+    {"type": "closing", "kicker": "Ton tour",
+     "h": "Toi, tu as ouvert le REEE de ton enfant&nbsp;?",
+     "hl": "Dis-le en commentaire.",
+     "text": "Choisis des placements conformes (sans intérêt). Vérifie les règles de la SCEE sur canada.ca.",
+     "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+     "disc": "Information générale, pas un avis fiscal ou financier personnalisé."}
+  ]
+}
