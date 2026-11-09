@@ -1,0 +1,27 @@
+{
+  "slug": "reee-choix",
+  "kicker": "REEE : individuel ou familial ?",
+  "slides": [
+    {"type": "cover",
+     "title": "REEE <mark>individuel</mark> ou <mark>familial</mark> ?",
+     "hook": "Les deux existent. Beaucoup de parents l'apprennent à l'ouverture.",
+     "swipe": "Glisse : la différence ➜",
+     "banner": "Quel REEE choisir<br>pour ton enfant ?"},
+    {"type": "cards", "kicker": "Les deux types",
+     "cards": [
+      {"num": 1, "color": "blue", "icon": "🧒", "text": "<b>Individuel</b> : un seul bénéficiaire, <b>sans limite d'âge</b>. Pour ton enfant, un filleul ou même toi."},
+      {"num": 2, "color": "green", "icon": "👨‍👩‍👧‍👦", "text": "<b>Familial</b> : plusieurs enfants, et l'argent <b>se partage entre eux</b>. Ils doivent être liés à toi par le sang ou l'adoption."}
+     ]},
+    {"type": "cards", "kicker": "Dans les deux cas",
+     "cards": [
+      {"num": 1, "color": "gold", "icon": "🎁", "text": "La SCEE ajoute jusqu'à <b>7&nbsp;200&nbsp;$ par enfant</b>."},
+      {"num": 2, "color": "purple", "icon": "⚖️", "text": "Il n'y a <b>pas de bon choix universel</b>. Ça dépend de ta famille."}
+     ]},
+    {"type": "closing", "kicker": "Ton tour",
+     "h": "Toi, tu penches pour lequel ?",
+     "hl": "Individuel ou familial ?",
+     "text": "Sauvegarde ce post pour y revenir, et partage-le à un parent qui hésite. Vérifie les règles sur canada.ca.",
+     "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+     "disc": "Information générale, pas un avis financier personnalisé."}
+  ]
+}
