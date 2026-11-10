@@ -1,0 +1,33 @@
+{
+  "slug": "cinq-regles",
+  "kicker": "5 règles pour ta liberté",
+  "slides": [
+    {"type": "cover",
+     "title": "La motivation n'a jamais payé une retraite. <mark>Les règles, oui.</mark>",
+     "hook": "Tu n'as pas besoin de plus de motivation.",
+     "swipe": "Glisse : 5 règles à te poser ➜",
+     "banner": "Il te faut des exigences,<br>pas de l'élan."},
+    {"type": "cards", "kicker": "Règles 1 à 3",
+     "cards": [
+      {"num": 1, "color": "gold", "icon": "📈", "text": "Quand ton <b>train de vie monte</b>, tes <b>placements montent aussi</b>."},
+      {"num": 2, "color": "blue", "icon": "🏠", "text": "Ton <b>logement</b> te laisse de la place pour saisir des occasions."},
+      {"num": 3, "color": "red", "icon": "🚗", "text": "Tu ne finances pas un bien qui <b>perd de la valeur plus longtemps qu'il ne te sert</b>. Ex. : prêt auto de 84 mois."}
+     ]},
+    {"type": "cards", "kicker": "Règles 4 et 5",
+     "cards": [
+      {"num": 4, "color": "green", "icon": "🛟", "text": "Tu bâtis ton <b>coussin de sécurité</b> avant de soigner les apparences."},
+      {"num": 5, "color": "purple", "icon": "🎯", "text": "Ta retraite, c'est <b>un montant à atteindre</b>, pas un âge."}
+     ]},
+    {"type": "cards", "kicker": "Le vrai luxe",
+     "cards": [
+      {"num": 1, "color": "teal", "icon": "🔑", "text": "Paraître à l'aise et <b>bâtir sa liberté</b>, ce n'est pas la même chose."},
+      {"num": 2, "color": "gold", "icon": "✨", "text": "Le vrai luxe : avoir des <b>options</b>, posséder tes <b>actifs</b>, être <b>libre</b>."}
+     ]},
+    {"type": "closing", "kicker": "Ta liberté",
+     "h": "La liberté, ça se structure.",
+     "hl": "Laquelle de ces règles te parle le plus ?",
+     "text": "Ces règles ne sont pas universelles : ton revenu, ta famille et ton niveau de risque comptent. Prends-les comme des questions à te poser, pas comme des ordres.",
+     "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+     "disc": "Information générale, pas un avis financier personnalisé."}
+  ]
+}
