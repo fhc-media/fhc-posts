@@ -1,0 +1,34 @@
+{
+  "slug": "mission-dollar",
+  "kicker": "107 250 $ ou 1 150 $ ?",
+  "slides": [
+    {"type": "cover",
+     "title": "107&nbsp;250&nbsp;$ à dépenser ? Non. <mark>1&nbsp;150&nbsp;$.</mark>",
+     "hook": "Chaque dollar a déjà une mission.",
+     "swipe": "Glisse : le portrait ➜",
+     "banner": "Même portrait,<br>deux façons de le lire."},
+    {"type": "cards", "kicker": "Le portrait (1/2)",
+     "cards": [
+      {"num": 1, "color": "blue", "icon": "💳", "text": "Compte chèque : <b>1&nbsp;150&nbsp;$</b>"},
+      {"num": 2, "color": "gold", "icon": "🐷", "text": "Épargne : <b>6&nbsp;400&nbsp;$</b>"},
+      {"num": 3, "color": "red", "icon": "🛟", "text": "Fonds d'urgence : <b>9&nbsp;000&nbsp;$</b>"}
+     ]},
+    {"type": "cards", "kicker": "Le portrait (2/2)",
+     "cards": [
+      {"num": 4, "color": "green", "icon": "🌱", "text": "CELI : <b>27&nbsp;300&nbsp;$</b>"},
+      {"num": 5, "color": "purple", "icon": "🏦", "text": "REER : <b>44&nbsp;800&nbsp;$</b>"},
+      {"num": 6, "color": "teal", "icon": "🎓", "text": "REEE : <b>18&nbsp;600&nbsp;$</b>. Il paie les études, pas le prochain voyage."}
+     ]},
+    {"type": "cards", "kicker": "Deux façons de voir",
+     "cards": [
+      {"num": 1, "color": "red", "icon": "🛍️", "text": "<b>La plupart des gens</b> voient 107&nbsp;250&nbsp;$ <b>à dépenser</b>."},
+      {"num": 2, "color": "green", "icon": "🧭", "text": "<b>Les parents qui planifient</b> voient <b>1&nbsp;150&nbsp;$</b> à dépenser."}
+     ]},
+    {"type": "closing", "kicker": "La différence",
+     "h": "Chaque dollar a déjà une mission.",
+     "hl": "Et toi, combien as-tu vraiment à dépenser&nbsp;?",
+     "text": "Dis-le en commentaire. Exemple chiffré pour illustrer, pas un conseil personnalisé.",
+     "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+     "disc": "Exemple fictif. Information générale, pas un avis financier personnalisé."}
+  ]
+}
