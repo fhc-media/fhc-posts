@@ -1,0 +1,41 @@
+{
+  "slug": "declaration-parents",
+  "kicker": "Parents : ta déclaration",
+  "slides": [
+    {"type": "cover",
+     "title": "Pas de déclaration de revenus, <mark>pas d'allocations</mark> pour tes enfants.",
+     "hook": "L'impôt, c'est un levier financier de famille.",
+     "swipe": "Glisse : 3 choses à savoir ➜",
+     "banner": "Novembre,<br>c'est le bon moment."},
+    {"type": "cards", "kicker": "1 · Deux déclarations",
+     "cards": [
+      {"num": 1, "color": "blue", "icon": "📄", "text": "Tu produis <b>2 déclarations</b> : une à <b>Revenu Québec</b>, une à l'<b>ARC</b>."},
+      {"num": 2, "color": "gold", "icon": "📅", "text": "Date limite : <b>30 avril</b> (15 juin si travailleur autonome). Le <b>solde dû se paie le 30 avril</b>."},
+      {"num": 3, "color": "red", "icon": "⚠️", "text": "Solde dû + retard : <b>5&nbsp;%</b> + <b>1&nbsp;% par mois</b> + intérêts. Pas les moyens de payer ? <b>Produis-la quand même.</b>"}
+     ]},
+    {"type": "cards", "kicker": "2 · Tes versements",
+     "cards": [
+      {"num": 1, "color": "green", "icon": "👶", "text": "Ta déclaration déclenche l'<b>allocation canadienne pour enfants</b>, le <b>crédit TPS/TVH</b> et le <b>crédit d'impôt pour solidarité</b>."},
+      {"num": 2, "color": "red", "icon": "⏸️", "text": "Pas de déclaration : tes versements <b>peuvent être suspendus</b>."}
+     ]},
+    {"type": "chips",
+     "card": {"num": 3, "color": "purple", "text": "Le <b>compte où tu investis</b> change ce que tu gardes. Le bon choix dépend de ton revenu et de ta situation."},
+     "chips": [
+      {"name": "CELI", "sub": "gains libres d'impôt", "color": "green", "icon": "🌱"},
+      {"name": "REER", "sub": "déduction d'impôt", "color": "blue", "icon": "🏦"},
+      {"name": "CELIAPP", "sub": "première propriété", "color": "purple", "icon": "🏠"},
+      {"name": "Non enregistré", "sub": "imposé chaque année", "color": "gold", "icon": "📂"}
+     ]},
+    {"type": "cards", "kicker": "Pourquoi maintenant ?",
+     "cards": [
+      {"num": 1, "color": "purple", "icon": "🏠", "text": "<b>CELIAPP</b> (si admissible) : cotise avant le <b>31 décembre</b> pour la déduction de 2026."},
+      {"num": 2, "color": "blue", "icon": "🏦", "text": "<b>REER</b> : jusqu'au <b>1er mars 2027</b>."}
+     ]},
+    {"type": "closing", "kicker": "Ton premier geste",
+     "h": "Presque personne ne t'a appris comment ça marche. Ce n'est pas de ta faute.",
+     "hl": "Produire ta déclaration à temps : ton premier geste d'investisseur.",
+     "text": "Tu produis ta déclaration seul(e) ou avec un comptable ? Dis-le en commentaire.",
+     "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+     "disc": "Information générale, pas un avis fiscal personnalisé. Valide avec l'ARC, Revenu Québec ou un comptable."}
+  ]
+}
