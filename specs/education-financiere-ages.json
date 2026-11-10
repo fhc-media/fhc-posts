@@ -1,0 +1,94 @@
+{
+  "slug": "education-ages",
+  "kicker": "L'argent, à chaque âge",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "L'éducation financière ne commence pas à <mark>18 ans</mark>.",
+      "hook": "Elle peut commencer beaucoup plus tôt.",
+      "swipe": "Glisse : la feuille de route ➜",
+      "banner": "Enseigner l'argent<br>à chaque âge."
+    },
+    {
+      "type": "cards",
+      "kicker": "4 à 6 ans",
+      "cards": [
+        {
+          "num": 1,
+          "color": "gold",
+          "icon": "🪙",
+          "text": "<b>Comprendre ce qu'est l'argent</b> et reconnaître pièces et billets."
+        },
+        {
+          "num": 2,
+          "color": "green",
+          "icon": "💼",
+          "text": "<b>Comment on gagne de l'argent.</b> Épargner VS dépenser."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "7 à 11 ans",
+      "cards": [
+        {
+          "num": 1,
+          "color": "blue",
+          "icon": "🧹",
+          "text": "<b>Gagner un peu d'argent</b> avec des tâches simples. Se fixer des <b>objectifs d'épargne</b>."
+        },
+        {
+          "num": 2,
+          "color": "purple",
+          "icon": "📝",
+          "text": "<b>Faire un petit budget.</b> Besoins VS désirs."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "12 à 14 ans",
+      "cards": [
+        {
+          "num": 1,
+          "color": "teal",
+          "icon": "🌱",
+          "text": "<b>Initiation à l'investissement</b> et compréhension des services bancaires."
+        },
+        {
+          "num": 2,
+          "color": "gold",
+          "icon": "🧮",
+          "text": "<b>Gérer un budget perso.</b> Dépenses responsables."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "kicker": "15 à 18 ans",
+      "cards": [
+        {
+          "num": 1,
+          "color": "red",
+          "icon": "💳",
+          "text": "<b>Crédit, débit, emprunts :</b> comment ça marche ? Bonnes VS mauvaises dettes."
+        },
+        {
+          "num": 2,
+          "color": "green",
+          "icon": "🎓",
+          "text": "<b>Objectifs de carrière réalistes</b> et bases solides en investissement."
+        }
+      ]
+    },
+    {
+      "type": "closing",
+      "kicker": "Le résultat",
+      "h": "Des jeunes plus confiants et prêts pour la vraie vie.",
+      "hl": "Partage-le à un parent.",
+      "text": "Pour un parent qui veut offrir cette chance à son enfant. Choisis des placements conformes (sans intérêt) quand vous passez à l'investissement.",
+      "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+      "disc": "Information générale à but éducatif."
+    }
+  ]
+}
