@@ -1,0 +1,34 @@
+{
+  "slug": "celi-6-etapes",
+  "kicker": "6 étapes pour investir",
+  "slides": [
+    {"type": "cover",
+     "title": "Tu n'as pas besoin de choisir les bonnes actions.",
+     "hook": "Il te faut 270&nbsp;$ aux 2 semaines et une structure.",
+     "swipe": "Glisse : les 6 étapes ➜",
+     "banner": "Tu n'es pas<br>trop en retard."},
+    {"type": "cards", "kicker": "Le point de départ",
+     "cards": [
+      {"num": 1, "color": "green", "icon": "🌱", "text": "7&nbsp;000&nbsp;$ : la <b>limite annuelle du CELI</b> en 2026."},
+      {"num": 2, "color": "gold", "icon": "🗓️", "text": "Environ <b>270&nbsp;$ aux 2 semaines</b>. Ta marge personnelle peut différer : vérifie-la dans <b>Mon dossier de l'ARC</b>."}
+     ]},
+    {"type": "cards", "kicker": "Étapes 1 à 3",
+     "cards": [
+      {"num": 1, "color": "red", "icon": "🛡️", "text": "<b>Protège ton revenu d'abord.</b> Assurance vie et invalidité : ta famille reste couverte."},
+      {"num": 2, "color": "green", "icon": "🎯", "text": "<b>Vise le maximum de ton CELI.</b> Environ 270&nbsp;$ aux 2 semaines."},
+      {"num": 3, "color": "blue", "icon": "⚙️", "text": "<b>Automatise.</b> Programme-le une fois : chaque paie, ton argent travaille."}
+     ]},
+    {"type": "cards", "kicker": "Étapes 4 à 6",
+     "cards": [
+      {"num": 4, "color": "purple", "icon": "🗂️", "text": "<b>Range tes comptes.</b> CELI, CELIAPP, REER, REEE : chacun son rôle."},
+      {"num": 5, "color": "teal", "icon": "🧺", "text": "<b>Investis simplement.</b> Un FNB ou fonds indiciel diversifié : un seul achat, plusieurs entreprises."},
+      {"num": 6, "color": "gold", "icon": "⏳", "text": "<b>Reste constant.</b> Le temps et la discipline font le gros du travail."}
+     ]},
+    {"type": "closing", "kicker": "Ton tour",
+     "h": "Laquelle de ces 6 étapes est la plus difficile pour toi&nbsp;?",
+     "hl": "Dis-le en commentaire.",
+     "text": "Pas de stratégie parfaite : ça dépend de ton revenu, de tes objectifs et de ton confort avec le risque. Choisis des placements conformes (sans intérêt).",
+     "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+     "disc": "Information générale, pas un avis financier personnalisé."}
+  ]
+}

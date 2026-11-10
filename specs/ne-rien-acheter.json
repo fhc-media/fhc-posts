@@ -1,0 +1,34 @@
+{
+  "slug": "ne-rien-acheter",
+  "kicker": "Le réflexe d'achat de 2026",
+  "slides": [
+    {"type": "cover",
+     "title": "Le nouveau réflexe de la classe moyenne : <mark>ne rien acheter</mark>.",
+     "hook": "Et les chiffres lui donnent raison.",
+     "swipe": "Glisse : les chiffres ➜",
+     "banner": "Auto, maison, sorties :<br>on attend."},
+    {"type": "cards", "kicker": "Le réflexe",
+     "cards": [
+      {"num": 1, "color": "blue", "icon": "🚗", "text": "Tu veux une nouvelle auto ? <b>Lave l'ancienne.</b>"},
+      {"num": 2, "color": "green", "icon": "🏠", "text": "Tu veux une nouvelle maison ? <b>Range l'ancienne.</b>"},
+      {"num": 3, "color": "gold", "icon": "🍽️", "text": "Tu veux sortir ? <b>Reste à la maison.</b>"}
+     ]},
+    {"type": "cards", "kicker": "Les chiffres",
+     "cards": [
+      {"num": 1, "color": "blue", "icon": "🚗", "text": "Auto neuve à 40&nbsp;000&nbsp;$ : environ <b>6&nbsp;000&nbsp;$</b> en TPS et TVQ."},
+      {"num": 2, "color": "green", "icon": "🏠", "text": "Maison à 500&nbsp;000&nbsp;$ à Montréal : environ <b>5&nbsp;600&nbsp;$</b> de taxe de bienvenue."},
+      {"num": 3, "color": "gold", "icon": "🛒", "text": "Épicerie : <b>+33&nbsp;%</b> depuis septembre 2020 (Statistique Canada)."}
+     ]},
+    {"type": "cards", "kicker": "Ce que ça veut dire",
+     "cards": [
+      {"num": 1, "color": "purple", "icon": "📈", "text": "Tu ne gères pas moins bien ton argent qu'avant. <b>Les prix ont monté.</b>"},
+      {"num": 2, "color": "teal", "icon": "✅", "text": "Ne pas acheter, ce n'est pas un échec. <b>C'est une décision.</b>"}
+     ]},
+    {"type": "closing", "kicker": "Ton budget",
+     "h": "Quel achat as-tu remis à plus tard cette année&nbsp;?",
+     "hl": "Dis-le en commentaire.",
+     "text": "Chaque achat évité libère de la place dans ton budget. À toi de choisir quoi en faire.",
+     "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+     "disc": "Montants approximatifs. Sources : Ville de Montréal, Statistique Canada. Information générale."}
+  ]
+}
