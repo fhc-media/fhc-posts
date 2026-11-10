@@ -1,0 +1,32 @@
+{
+  "slug": "inflation-5-ans",
+  "kicker": "Inflation : dans 5 ans",
+  "slides": [
+    {"type": "cover",
+     "title": "Dans 5 ans, l'inflation aura encore <mark>fait son travail</mark>.",
+     "hook": "Pas une prédiction. Juste la réalité des 50 dernières années.",
+     "swipe": "Glisse : ce que ça veut dire ➜",
+     "banner": "Les prix d'aujourd'hui ?<br>Plus hauts dans 5 ans."},
+    {"type": "cards", "kicker": "Où on en est",
+     "cards": [
+      {"num": 1, "color": "red", "icon": "📈", "text": "Inflation au Canada en septembre 2026 : <b>3,1&nbsp;%</b> (Statistique Canada)."},
+      {"num": 2, "color": "gold", "icon": "🛒", "text": "Prix de l'épicerie : <b>+33&nbsp;%</b> depuis septembre 2020."}
+     ]},
+    {"type": "cards", "kicker": "Exemple à 3 % par année",
+     "cards": [
+      {"num": 1, "color": "blue", "icon": "🧾", "text": "Des courses de <b>100&nbsp;$</b> aujourd'hui : environ <b>116&nbsp;$</b> dans 5 ans."},
+      {"num": 2, "color": "purple", "icon": "💵", "text": "<b>1&nbsp;000&nbsp;$</b> qui dorment : un pouvoir d'achat d'environ <b>860&nbsp;$</b> dans 5 ans."}
+     ]},
+    {"type": "cards", "kicker": "La vraie question",
+     "cards": [
+      {"num": 1, "color": "teal", "icon": "❓", "text": "Pas : « est-ce que ça va continuer ? » Mais : <b>ton argent travaille-t-il assez fort pour suivre ?</b>"},
+      {"num": 2, "color": "green", "icon": "🌱", "text": "Investir <b>régulièrement</b>, même de petits montants, est une réponse concrète."}
+     ]},
+    {"type": "closing", "kicker": "Ta famille",
+     "h": "Tu commences à investir pour ta famille, ou tu y penses encore&nbsp;?",
+     "hl": "Dis-le en commentaire.",
+     "text": "Choisis des placements conformes (sans intérêt). L'exemple à 3&nbsp;% est une illustration, pas une prévision.",
+     "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+     "disc": "Information générale, pas un avis financier personnalisé. Source : Statistique Canada."}
+  ]
+}
