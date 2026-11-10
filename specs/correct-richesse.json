@@ -1,0 +1,37 @@
+{
+  "slug": "correct-richesse",
+  "kicker": "« Correct » ne bâtit pas de richesse",
+  "slides": [
+    {"type": "cover",
+     "title": "« Correct » ne bâtit pas de <mark>richesse</mark>.",
+     "hook": "Tu t'en sors bien, mais ça n'avance pas ?",
+     "swipe": "Glisse : pourquoi ➜",
+     "banner": "Ce n'est pas un manque<br>d'efforts."},
+    {"type": "cards", "kicker": "Ça te ressemble ?",
+     "cards": [
+      {"num": 1, "color": "gold", "icon": "🐷", "text": "Tu as <b>un peu d'épargne</b>."},
+      {"num": 2, "color": "blue", "icon": "🏦", "text": "Un <b>CELI ou un REER</b> quelque part, peut-être 2 ou 3 placements."},
+      {"num": 3, "color": "red", "icon": "🤔", "text": "Tu te dis que tu t'en sors bien. Pourtant, tu sens que <b>ça n'avance pas</b>."}
+     ]},
+    {"type": "chips",
+     "card": {"num": "!", "color": "purple", "text": "C'est un <b>manque de lien entre tes comptes</b>. L'épargne seule ne fait pas travailler ton argent. Ce qui change la donne : comprendre <b>comment tout s'articule</b>."},
+     "chips": [
+      {"name": "CELI", "sub": "ton rôle ?", "color": "green", "icon": "🌱"},
+      {"name": "REER", "sub": "ton rôle ?", "color": "blue", "icon": "🏦"},
+      {"name": "Placements", "sub": "FNB, etc.", "color": "teal", "icon": "📊"},
+      {"name": "Objectifs", "sub": "les tiens", "color": "gold", "icon": "🎯"}
+     ]},
+    {"type": "cards", "kicker": "Chaque compte a un rôle",
+     "cards": [
+      {"num": 1, "color": "red", "icon": "😴", "text": "Quand tu ne sais pas lequel, ton argent <b>dort</b> au lieu de croître."},
+      {"num": 2, "color": "teal", "icon": "⚖️", "text": "Pas d'arrangement parfait : ça dépend de ton <b>revenu</b>, ton <b>horizon</b> et ton <b>risque</b>."},
+      {"num": 3, "color": "green", "icon": "⏱️", "text": "Pouvoir expliquer ton plan <b>en 1 minute</b>, c'est un excellent point de départ."}
+     ]},
+    {"type": "closing", "kicker": "Test de 1 minute",
+     "h": "À quoi sert chacun de tes comptes ?",
+     "hl": "Réponds en 1 phrase chacun.",
+     "text": "En serais-tu capable ? Dis-le en commentaire. Choisis des placements conformes (sans intérêt).",
+     "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+     "disc": "Information générale, pas un avis financier personnalisé."}
+  ]
+}
