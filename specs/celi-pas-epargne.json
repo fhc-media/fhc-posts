@@ -1,0 +1,32 @@
+{
+  "slug": "celi-pas-epargne",
+  "kicker": "Ton CELI n'est pas un compte d'épargne",
+  "slides": [
+    {"type": "cover",
+     "title": "Ton CELI n'est pas un compte d'épargne, même si son nom te le fait croire.",
+     "hook": "5 points pour ne pas laisser ton argent dormir.",
+     "swipe": "Glisse : les 5 points ➜",
+     "banner": "Un CELI, c'est un<br>contenant."},
+    {"type": "cards", "kicker": "Points 1 et 2",
+     "cards": [
+      {"num": 1, "color": "blue", "icon": "📦", "text": "Il peut contenir des <b>placements</b> : actions, FNB, fonds. Ce que tu mets dedans change tout."},
+      {"num": 2, "color": "green", "icon": "🌱", "text": "La croissance est <b>libre d'impôt</b>, même au retrait. Exception : <b>retenue à la source de 15&nbsp;%</b> sur les dividendes américains."}
+     ]},
+    {"type": "cards", "kicker": "Points 3 et 4",
+     "cards": [
+      {"num": 3, "color": "gold", "icon": "🧾", "text": "Un retrait n'est <b>pas un revenu</b> : il n'affecte pas les prestations basées sur le revenu, comme l'<b>Allocation canadienne pour enfants</b>."},
+      {"num": 4, "color": "red", "icon": "📅", "text": "Tes droits reviennent le <b>1er janvier suivant</b>. Recotiser trop tôt : pénalité de <b>1&nbsp;% par mois</b>."}
+     ]},
+    {"type": "cards", "kicker": "Point 5",
+     "cards": [
+      {"num": 5, "color": "purple", "icon": "😴", "text": "Du <b>cash dans un CELI</b> rapporte peu : c'est un compte d'épargne avec un autre nom."},
+      {"num": "!", "color": "teal", "icon": "⚖️", "text": "Investir donne une chance de croissance, <b>sans garantie</b>. Le marché peut baisser."}
+     ]},
+    {"type": "closing", "kicker": "C'est toi qui choisis",
+     "h": "Bien utilisé, le CELI est un outil puissant.",
+     "hl": "Qu'est-ce qu'il y a dans ton CELI ?",
+     "text": "Tu choisis quoi y mettre, selon ton horizon et ton confort avec le risque. Choisis des placements conformes (sans intérêt).",
+     "cta": "🔖 Enregistre ce post · 👉 Suis @financehalalcanada",
+     "disc": "Information générale, pas un avis financier personnalisé."}
+  ]
+}
