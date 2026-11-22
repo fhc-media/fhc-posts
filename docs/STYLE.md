@@ -41,3 +41,21 @@ Les scènes peintes très détaillées (personnages en situation, enfants, arèn
 - `header: "workspace"` remplace la mascotte par un bureau dessiné (portable, tasse, livres).
 - Panneau colonne : `col: true`, `num`, `color` (`gold`/`green`/`blue`/`purple`/`teal`), `title`, `icons` (emojis), `bullets`, `ex`, `hl`, `mb` (marge basse pour suivre la courbe du cercle). Réglages : `head_h`, `foot_h`, `cbsize`, `cisize`. Exemple : `specs/commencer-1000.json`.
 - Deux familles de visuels : (A) générés par ChatGPT (style peint, publiés tels quels après vérification du texte) ; (B) générés ici (vectoriel, automatisables).
+
+## Reels 9:16 (gabarit v4 « plein cadre », sans cercle doré)
+Générateur : `python3 tools/make_reel.py specs/reels/<nom>.json [dossier_sortie] [--preview]` (voix Piper `fr-siwis-medium`,
+modèle : https://github.com/rhasspy/piper/releases/download/v0.0.2/voice-fr-siwis-medium.tar.gz, chemin via `FHC_PIPER_MODEL`).
+- **Grille 1080×1920** : ciel 0–800 (skyline Toronto en parallaxe, étoiles) ; titre sur pinceau x 64–800, y 252–600, Poppins 800 80 px
+  (hook 88 px, mot-clé 100 px en capitales) ; pastille « ÉTAPE x/3 » y 612 ; mascotte x 720–1060, y 446–820 (sous la feuille) ;
+  feuille menthe dès y 780 (rayon 56) ; contenu x 76–902, y 830–1330 (6 mots max par bloc, texte ≥ 40 px) ;
+  sous-titres mot à mot y 1350–1510 (Poppins 800 60 px, mot actif surligné jaune) ; pied marine y 1540–1920 (décoratif).
+  Zones interdites : y < 250 ; x > 940 entre y 1000 et 1800.
+- **Rythme** : voix dès 0,05 s, 0,18 s entre phrases, pauses de virgule ≤ 0,20 s, 0,20 s entre scènes ; ~30–33 s.
+  Un événement visuel toutes les 2,5 s au plus ; éléments 0,1 s avant le mot prononcé ; lignes « fantômes » à 25 % en début d'étape.
+- **Hook** : image 0 complète (titre + notification), compteur +12,47 $, tampon « RIBA ? » à 0,9 s, mascotte surprise « ?! »,
+  promesse avec flèche → (jamais ↓), « ding » à 0,1 s.
+- **Transitions** : balayage jaune incliné sur la feuille (0,36 s), titre qui sort/entre, pinceau et mascotte fixes.
+- **Fin** : un seul CTA (« Enregistre »), question OUI/NON, logo + slogan dans la feuille, mention légale 32 px ;
+  boucle : la dernière image reprend l'image 0.
+- **Son** : voix −16 LUFS, anachid avec ducking (sidechain), mix final −14 LUFS / −1,5 dBTP.
+- **Contrôles automatiques** (`qa.json`) : zones sûres, tailles mini, plages figées, loudness, silences.

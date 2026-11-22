@@ -1,0 +1,210 @@
+{
+  "slug": "interets-bancaires",
+  "keywords": [
+    "intérêts",
+    "riba",
+    "nécessiteux",
+    "source",
+    "halal",
+    "purification"
+  ],
+  "display": {
+    "sadaka": "sadaqa",
+    "trois": "3"
+  },
+  "music": "/mnt/user-data/uploads/73ab25f3-i_read_quran-background-nasheed-27-499783.mp3",
+  "music_start": 1.0,
+  "scenes": [
+    {
+      "type": "hook",
+      "voice": [
+        "Ta banque t'a versé des intérêts ?",
+        "Voici trois étapes pour t'en libérer."
+      ],
+      "title": "Ta banque t'a versé des <mark>intérêts&nbsp;?</mark>",
+      "poses": [
+        [
+          0,
+          "think"
+        ],
+        [
+          0.9,
+          "surprised"
+        ]
+      ],
+      "block": {
+        "kind": "notif",
+        "label": "Dépôt d'intérêts",
+        "bank": "Ta banque",
+        "amount": 12.47,
+        "stamp": "RIBA ?",
+        "promise": "3 étapes pour t'en libérer",
+        "promise_at": "Voici"
+      }
+    },
+    {
+      "type": "stat",
+      "voice": [
+        "Les intérêts bancaires, c'est du riba.",
+        "Pour la majorité des savants, tu ne dois pas les garder."
+      ],
+      "title": "Les intérêts, c'est du <mark>riba</mark>",
+      "poses": [
+        [
+          0,
+          "think"
+        ]
+      ],
+      "block": {
+        "kind": "stat",
+        "icon": "🏦",
+        "label": "Intérêts bancaires",
+        "value": "= riba",
+        "value_at": "riba",
+        "pill": "Avis de la majorité des savants",
+        "pill_at": "majorité",
+        "pill_pulse_at": "garder"
+      }
+    },
+    {
+      "type": "step",
+      "step": 1,
+      "voice": [
+        "Étape un : ne les dépense pas pour toi.",
+        "Ni pour tes achats, ni pour tes factures, ni pour ton épargne."
+      ],
+      "title": "Ne les <mark>dépense</mark> pas pour toi",
+      "poses": [
+        [
+          0,
+          "think"
+        ]
+      ],
+      "block": {
+        "kind": "rows",
+        "items": [
+          {
+            "icon": "🛍",
+            "text": "Tes achats",
+            "end": "x",
+            "at": "Ni"
+          },
+          {
+            "icon": "💳",
+            "text": "Tes factures",
+            "end": "x",
+            "at": "ni"
+          },
+          {
+            "icon": "🐷",
+            "text": "Ton épargne",
+            "end": "x",
+            "at": "ni"
+          }
+        ]
+      }
+    },
+    {
+      "type": "step",
+      "step": 2,
+      "voice": [
+        "Étape deux : donne-les aux nécessiteux, sans attendre de récompense.",
+        "C'est une purification, pas une sadaka."
+      ],
+      "title": "Donne&#8209;les aux <mark>nécessiteux</mark>",
+      "poses": [
+        [
+          0,
+          "smile"
+        ],
+        [
+          "récompense",
+          "think"
+        ]
+      ],
+      "block": {
+        "kind": "cards",
+        "items": [
+          {
+            "icon": "🤝",
+            "text": "Œuvres caritatives",
+            "color": "green",
+            "at": "nécessiteux"
+          },
+          {
+            "icon": "🏥",
+            "text": "Projets utiles",
+            "color": "blue",
+            "at": "nécessiteux"
+          }
+        ],
+        "banner": {
+          "text": "Purification, pas sadaqa",
+          "at": "purification"
+        }
+      }
+    },
+    {
+      "type": "step",
+      "step": 3,
+      "voice": [
+        "Étape trois : coupe la source.",
+        "Un compte sans intérêts, et ton épargne en placements halal."
+      ],
+      "title": "Coupe la <mark>source</mark>",
+      "poses": [
+        [
+          0,
+          "think"
+        ],
+        [
+          "compte",
+          "smile"
+        ]
+      ],
+      "block": {
+        "kind": "rows",
+        "items": [
+          {
+            "icon": "🏦",
+            "text": "Compte sans intérêts",
+            "end": "v",
+            "at": "Un"
+          },
+          {
+            "icon": "📈",
+            "text": "Placements halal (ex. CELI)",
+            "end": "v",
+            "at": "et"
+          },
+          {
+            "icon": "⚠",
+            "text": "Avis divergents : demande à un savant",
+            "tone": "warn",
+            "small": true,
+            "at": "+0.9"
+          }
+        ]
+      }
+    },
+    {
+      "type": "end",
+      "voice": [
+        "Enregistre cette vidéo pour ton prochain relevé.",
+        "Et la prochaine fois que ta banque te verse des intérêts…"
+      ],
+      "title": "<mark>Enregistre</mark> cette vidéo",
+      "poses": [
+        [
+          0,
+          "smile"
+        ]
+      ],
+      "block": {
+        "kind": "end",
+        "question": "Tu le savais ? OUI / NON en commentaire",
+        "disclaimer": "Information générale, pas un conseil financier ou religieux personnalisé."
+      }
+    }
+  ]
+}
